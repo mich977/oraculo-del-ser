@@ -1,7 +1,7 @@
 const CACHE_NAME = 'oraculo-cache-v1';
 const urlsToCache = [
   './',
-  './Matriz del alma.html',
+  './index.html',
   './manifest.json'
 ];
 
