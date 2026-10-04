@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#F9F6F0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="manifest" href="manifest.json">
+    <title>ORÁCULO DEL SER: Portal y Matriz del Alma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold-antique: #B8860B;
+            --gold-dark: #996515;
+            --bg-parchment: #F9F6F0;
+            --charcoal: #1A1A24;
+            --burgundy: #601A24;
+            --sapphire: #0D3B66;
+            --text-body: #2D3748;
+        }
+        body {
+            background-color: var(--bg-parchment);
+            background-image: radial-gradient(rgba(184, 134, 11, 0.04) 1px, transparent 1px), radial-gradient(rgba(184, 134, 11, 0.04) 1px, transparent 1px);
+            background-size: 24px 24px;
+            background-position: 0 0, 12px 12px;
+            color: var(--text-body);
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            overflow-x: hidden;
+            margin: 0;
+            min-height: 100vh;
+        }
+        h1, h2, h3, h4, h5, h6, .cinzel {
+            font-family: 'Cinzel', serif;
+            color: var(--charcoal);
+        }
+        .card {
+            background: #FFFFFF;
+            border: 1px solid var(--gold-antique);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04), inset 0 0 10px rgba(184, 134, 11, 0.02);
+            border-radius: 0.75rem;
+        }
+        .pulse-gold {
+            animation: pulse-gold 2s infinite;
+        }
+        @keyframes pulse-gold {
+            0% { box-shadow: 0 0 0 0 rgba(184, 134, 11, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(184, 134, 11, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(184, 134, 11, 0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-in forwards;
+            opacity: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hidden-view {
+            display: none !important;
+        }
+        .input-field {
+            background: #FFFFFF;
+            border: 1px solid rgba(184, 134, 11, 0.5);
+            color: var(--charcoal);
+            transition: all 0.3s ease;
+        }
+        .input-field:focus {
+            outline: none;
+            border-color: var(--gold-dark);
+            box-shadow: 0 0 10px rgba(184, 134, 11, 0.2);
+        }
+        .title-burgundy { color: var(--burgundy); }
+        .quote-sapphire { color: var(--sapphire); font-style: italic; }
+        
+        .tab-btn {
+            padding: 0.75rem 1.5rem;
+            font-family: 'Cinzel', serif;
+            font-weight: bold;
+            border-radius: 9999px;
+            border: 2px solid var(--gold-antique);
+            background: transparent;
+            color: var(--gold-dark);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .tab-btn.active {
+            background: var(--gold-antique);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-parchment); }
+        ::-webkit-scrollbar-thumb { background: var(--gold-antique); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--gold-dark); }
+
+        /* Estilos de Impresión */
+        @media print {
+            body {
+                background: #FFFFFF !important;
+                background-image: none !important;
+                color: #000000 !important;
+            }
+            .no-print, .tab-btn, form, header, nav, #hero-section-ind, #hero-section-par {
+                display: none !important;
+            }
+            .card {
+                border: 1px solid #ccc !important;
+                box-shadow: none !important;
+                break-inside: avoid;
+                page-break-inside: avoid;
+                background: #FFFFFF !important;
+                margin-bottom: 20px;
+            }
+            .fade-in {
+                animation: none !important;
+                opacity: 1 !important;
+                transform: none !important;
+            }
+            .hidden-view {
+                display: none !important;
+            }
+            .action-bar {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-amber-200 selection:text-amber-900">
+
+    <main class="container mx-auto px-4 py-8 min-h-screen flex flex-col items-center justify-start relative z-10">
+        
+        <!-- EASTER EGG ALQUÍMICO -->
+        <div class="absolute top-2 right-2 md:top-6 md:right-6 z-50 group no-print">
+            <!-- Medallón Lobo -->
+            <div class="relative w-11 h-11 md:w-16 md:h-16 rounded-full border-2 border-[#B8860B] bg-[#1A1A24] shadow-[0_0_15px_rgba(184,134,11,0.5)] flex items-center justify-center overflow-hidden transition-all duration-500 cursor-pointer group-hover:shadow-[0_0_30px_rgba(255,69,0,0.6)] group-hover:border-[#FF4500]">
+                
+                <!-- Fuego animado -->
+                <div class="absolute inset-0 bg-gradient-to-t from-[#8B0000] via-[#FF4500] to-transparent opacity-40 group-hover:opacity-80 transition-opacity duration-500"></div>
+                <div class="absolute bottom-0 w-full h-1/2 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-yellow-400 via-red-600 to-transparent opacity-70 animate-pulse"></div>
+
+                <!-- Lobo SVG (Minimalista y Geométrico) -->
+                <svg viewBox="0 0 100 100" class="w-8 h-8 md:w-11 md:h-11 relative z-10 drop-shadow-lg transition-transform duration-500 group-hover:scale-110">
+                    <polygon points="50,90 25,60 10,40 25,45 35,20 50,35 65,20 75,45 90,40 75,60" fill="#1A1A24" stroke="#B8860B" stroke-width="1.5" stroke-linejoin="round"/>
+                    <polygon points="50,90 25,60 50,65" fill="#2D3748" stroke="#B8860B" stroke-width="1" stroke-linejoin="round"/>
+                    <polygon points="50,90 75,60 50,65" fill="#1A1A24" stroke="#B8860B" stroke-width="1" stroke-linejoin="round"/>
+                    <polygon points="25,45 50,35 25,60" fill="#2D3748" stroke="#B8860B" stroke-width="1" stroke-linejoin="round"/>
+                    <polygon points="75,45 50,35 75,60" fill="#1A1A24" stroke="#B8860B" stroke-width="1" stroke-linejoin="round"/>
+                    <polygon points="50,65 25,60 50,35" fill="#3A475C" stroke="#B8860B" stroke-width="1" stroke-linejoin="round"/>
+                    <polygon points="50,65 75,60 50,35" fill="#2D3748" stroke="#B8860B" stroke-width="1" stroke-linejoin="round"/>
+                    <!-- Ojos Zafiro -->
+                    <polygon points="35,50 42,48 45,52" fill="#00FFFF" stroke="#00FFFF" stroke-width="1" class="animate-pulse"/>
+                    <polygon points="65,50 58,48 55,52" fill="#00FFFF" stroke="#00FFFF" stroke-width="1" class="animate-pulse"/>
+                    <!-- Hocico -->
+                    <polygon points="46,80 54,80 50,86" fill="#000000"/>
+                </svg>
+            </div>
+
+            <!-- Tooltip / Tarjeta Secreta -->
+            <div class="absolute right-0 top-14 md:top-20 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 w-auto whitespace-nowrap bg-[#F9F6F0] border border-[#B8860B] rounded-md shadow-2xl py-1.5 px-3 text-right">
+                <p class="text-[#111111] text-right" style="font-family: 'Georgia', 'Times New Roman', serif; font-style: italic; font-size: 0.85rem; font-weight: 600;">
+                    By Michael NB - <span style="font-size: 0.9rem; margin-left: 1px;">γ</span>
+                </p>
+                <div class="w-full h-[1px] bg-gradient-to-r from-transparent to-[#B8860B] opacity-70 my-1"></div>
+                <p class="italic text-[11px] text-[#996515]">Alquimia y Código Ancestral</p>
+            </div>
+        </div>
+
+        <!-- HEADER TABS -->
+        <div class="w-full flex flex-col md:flex-row justify-center items-center gap-4 mb-10 fade-in mt-14 md:mt-0 no-print" style="animation-delay: 0.1s;">
+            <button id="btn-tab-individual" class="tab-btn active w-full md:w-auto text-sm md:text-base">Portal Individual (Matriz y Ahora)</button>
+            <button id="btn-tab-pareja" class="tab-btn w-full md:w-auto text-sm md:text-base">Espejo Alquímico (Sinastría y Vínculo)</button>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- VIEW 1: PORTAL INDIVIDUAL -->
+        <!-- ========================================== -->
+        <div id="view-individual" class="w-full flex flex-col items-center">
+            
+            <!-- HERO SECTION INDIVIDUAL -->
+            <div id="hero-section-ind" class="w-full max-w-2xl card p-8 md:p-12 text-center fade-in">
+                <h1 class="text-4xl md:text-5xl cinzel title-burgundy mb-4 tracking-wider font-bold">ORÁCULO DEL SER</h1>
+                <p class="text-lg font-bold quote-sapphire mb-8">Portal de Sincronicidad y Presencia</p>
+                
+                <form id="oracle-form-ind" class="space-y-6 text-left">
+                    <div>
+                        <label class="block text-sm font-bold text-[#1A1A24] mb-1 cinzel tracking-wide">Nombre del Peregrino</label>
+                        <input type="text" id="ind-name" required placeholder="Tu primer nombre..." class="input-field w-full rounded-lg px-4 py-3 text-lg">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-[#1A1A24] mb-1 cinzel tracking-wide">Fecha de Nacimiento</label>
+                            <input type="date" id="ind-date" required class="input-field w-full rounded-lg px-4 py-3 text-lg">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-[#1A1A24] mb-1 cinzel tracking-wide">Hora de Llegada (Opcional)</label>
+                            <input type="time" id="ind-time" class="input-field w-full rounded-lg px-4 py-3 text-lg">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-[#1A1A24] mb-1 cinzel tracking-wide">La Puerta del Ahora</label>
+                        <input type="date" id="ind-current-date" required class="input-field w-full rounded-lg px-4 py-3 text-lg">
+                    </div>
+                    <div class="pt-4 text-center">
+                        <button type="submit" id="btn-calcular-individual" class="w-full md:w-auto px-8 py-4 bg-[#F9F6F0] border-2 border-[#B8860B] text-[#996515] hover:bg-[#B8860B] hover:text-white transition-all duration-500 rounded-full font-bold cinzel tracking-widest text-lg pulse-gold">
+                            Consultar la Matriz
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- RESULTS SECTION INDIVIDUAL -->
+            <div id="resultados-individual" class="w-full max-w-7xl hidden-view py-8">
+                
+                <!-- ACTION BAR TOP -->
+                <div class="action-bar flex flex-col sm:flex-row justify-center gap-6 mb-10 fade-in">
+                    <button type="button" onclick="resetForm('ind')" class="px-6 py-2 bg-white border border-[#B8860B] text-[#996515] hover:bg-[#F9F6F0] transition-all rounded-full font-bold cinzel tracking-wider shadow-sm flex items-center justify-center">
+                        <span class="mr-2 text-xl">↺</span> Nueva Consulta
+                    </button>
+                    <button type="button" onclick="window.print()" class="px-6 py-2 bg-[#996515] text-white hover:bg-[#1A1A24] transition-all rounded-full font-bold cinzel tracking-wider shadow-md flex items-center justify-center">
+                        <span class="mr-2 text-xl">🖨️</span> Guardar PDF
+                    </button>
+                </div>
+
+                <!-- Matriz Natal Header -->
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="text-3xl md:text-5xl cinzel title-burgundy mb-4 font-bold">La Matriz del Alma</h2>
+                    <p class="text-xl quote-sapphire" id="res-ind-saludo">Bienvenido, ...</p>
+                </div>
+
+                <!-- Matriz Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
+                    
+                    <!-- 1. Memoria de Reencarnación -->
+                    <div class="card p-6 fade-in border-[3px] border-double border-[#996515]" style="animation-delay: 0.1s; background: linear-gradient(to bottom right, #FFFFFF, #FAF8F5);">
+                        <div class="flex items-center mb-4 border-b border-[#B8860B] pb-2">
+                            <span class="text-3xl mr-3">♾️</span>
+                            <h3 class="text-xl cinzel title-burgundy font-bold">Memoria del Alma</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <p><strong class="text-[#1A1A24]">Madurez:</strong> <span id="res-ind-alma-edad" class="text-lg text-[#0D3B66] font-bold cinzel"></span></p>
+                            <p class="text-[15px] mt-2 text-[#2D3748]" id="res-ind-alma-desc"></p>
+                        </div>
+                    </div>
+
+                    <!-- Numerología -->
+                    <div class="card p-6 fade-in" style="animation-delay: 0.2s;">
+                        <div class="flex items-center mb-4 border-b border-[#B8860B] pb-2">
+                            <span class="text-3xl mr-3">🔢</span>
+                            <h3 class="text-xl cinzel title-burgundy font-bold">Numerología Sagrada</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <p><strong class="text-[#1A1A24]">Camino de Vida:</strong> <span id="res-ind-camino" class="text-lg text-[#996515] font-bold"></span></p>
+                            <p><strong class="text-[#1A1A24]">Destino (Nombre):</strong> <span id="res-ind-destino" class="text-lg text-[#0D3B66] font-bold"></span></p>
+                            <p class="text-[15px] mt-2 text-[#2D3748]" id="res-ind-num-desc"></p>
+                        </div>
+                    </div>
+
+                    <!-- Kybalion -->
+                    <div class="card p-6 fade-in" style="animation-delay: 0.3s;">
+                        <div class="flex items-center mb-4 border-b border-[#B8860B] pb-2">
+                            <span class="text-3xl mr-3">🏛️</span>
+                            <h3 class="text-xl cinzel title-burgundy font-bold">Principio Hermético</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <h4 class="text-lg font-bold text-[#1A1A24] cinzel" id="res-ind-kybalion-nombre"></h4>
+                            <p class="text-[15px] quote-sapphire">"<span id="res-ind-kybalion-axioma"></span>"</p>
+                            <p class="text-[15px] text-[#2D3748]" id="res-ind-kybalion-desc"></p>
+                        </div>
+                    </div>
+
+                    <!-- Arquetipo -->
+                    <div class="card p-6 fade-in" style="animation-delay: 0.4s;">
+                        <div class="flex items-center mb-4 border-b border-[#B8860B] pb-2">
+                            <span class="text-3xl mr-3">📜</span>
+                            <h3 class="text-xl cinzel title-burgundy font-bold">Arquetipo Místico</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <p><strong class="text-[#1A1A24]">Arquetipo:</strong> <span class="text-[#996515] cinzel font-bold" id="res-ind-arquetipo"></span></p>
+                            <p class="text-[15px] quote-sapphire border-l-2 border-[#B8860B] pl-3 py-1 my-2" id="res-ind-versiculo"></p>
+                            <p class="text-[15px] text-[#2D3748]" id="res-ind-arq-desc"></p>
+                        </div>
+                    </div>
+
+                    <!-- Luna -->
+                    <div class="card p-6 fade-in" style="animation-delay: 0.5s;">
+                        <div class="flex items-center mb-4 border-b border-[#B8860B] pb-2">
+                            <span class="text-3xl mr-3 grayscale sepia" id="res-ind-luna-icon">🌖</span>
+                            <h3 class="text-xl cinzel title-burgundy font-bold">Energía Lunar</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <p><strong class="text-[#1A1A24]">Fase:</strong> <span id="res-ind-luna-nombre" class="font-bold text-[#0D3B66]"></span></p>
+                            <p class="text-[15px] text-[#2D3748]" id="res-ind-luna-desc"></p>
+                        </div>
+                    </div>
+
+                    <!-- Maya -->
+                    <div class="card p-6 fade-in" style="animation-delay: 0.6s;">
+                        <div class="flex items-center mb-4 border-b border-[#B8860B] pb-2">
+                            <span class="text-3xl mr-3 grayscale sepia">🌞</span>
+                            <h3 class="text-xl cinzel title-burgundy font-bold">Kin Maya</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <p><strong class="text-[#1A1A24]">Sello y Tono:</strong> <span id="res-ind-maya-nombre" class="text-[#996515] font-bold"></span></p>
+                            <p class="text-[15px] text-[#2D3748]" id="res-ind-maya-desc"></p>
+                        </div>
+                    </div>
+
+                    <!-- Mapuche -->
+                    <div class="card p-6 fade-in" style="animation-delay: 0.7s;">
+                        <div class="flex items-center mb-4 border-b border-[#B8860B] pb-2">
+                            <span class="text-3xl mr-3 grayscale sepia">🗻</span>
+                            <h3 class="text-xl cinzel title-burgundy font-bold">Sabiduría Mapuche</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <p><strong class="text-[#1A1A24]">Elemento:</strong> <span id="res-ind-mapuche-elemento" class="text-[#0D3B66] font-bold"></span></p>
+                            <p class="text-[15px] text-[#2D3748]" id="res-ind-mapuche-desc"></p>
+                        </div>
+                    </div>
+
+                    <!-- Chino -->
+                    <div class="card p-6 fade-in" style="animation-delay: 0.8s;">
+                        <div class="flex items-center mb-4 border-b border-[#B8860B] pb-2">
+                            <span class="text-3xl mr-3 grayscale sepia">🐉</span>
+                            <h3 class="text-xl cinzel title-burgundy font-bold">Horóscopo Chino</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <p><strong class="text-[#1A1A24]">Signo Animal:</strong> <span id="res-ind-chino-signo" class="text-[#996515] font-bold"></span></p>
+                            <p><strong class="text-[#1A1A24]">Elemento:</strong> <span id="res-ind-chino-elemento" class="text-[#0D3B66] font-bold"></span></p>
+                            <p class="text-[15px] text-[#2D3748]" id="res-ind-chino-desc"></p>
+                        </div>
+                    </div>
+
+                    <!-- Sumerio -->
+                    <div class="card p-6 fade-in" style="animation-delay: 0.9s;">
+                        <div class="flex items-center mb-4 border-b border-[#B8860B] pb-2">
+                            <span class="text-3xl mr-3 grayscale sepia">🏺</span>
+                            <h3 class="text-xl cinzel title-burgundy font-bold">Arquetipo Sumerio</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <p><strong class="text-[#1A1A24]">Deva Ancestral:</strong> <span id="res-ind-sumerio-dios" class="text-[#996515] font-bold cinzel"></span></p>
+                            <p class="text-[15px] quote-sapphire border-l-2 border-[#B8860B] pl-3 py-1 my-2">"<span id="res-ind-sumerio-aforismo"></span>"</p>
+                            <p class="text-[15px] text-[#2D3748]" id="res-ind-sumerio-desc"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- El Tránsito y El Ahora -->
+                <div class="text-center mb-10 fade-in" style="animation-delay: 1.0s;">
+                    <h2 class="text-3xl md:text-5xl cinzel title-burgundy mb-4 font-bold">El Tránsito y la Presencia</h2>
+                    <div class="w-24 h-1 bg-[#B8860B] mx-auto opacity-50 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+                    <div class="card p-8 fade-in" style="animation-delay: 1.1s; border-color: #601A24; border-width: 2px;">
+                        <h3 class="text-2xl cinzel text-[#601A24] mb-6 flex items-center font-bold"><span class="mr-3">⏳</span> El Pulso del Camino Actual</h3>
+                        <p class="text-lg text-[#2D3748] mb-4">Tu <strong class="text-[#1A1A24]">Año Personal</strong> actual es el <strong class="text-[#996515] text-2xl" id="res-ind-ano"></strong>.</p>
+                        <p class="text-[#2D3748] text-[16px] leading-relaxed" id="res-ind-ano-desc"></p>
+                    </div>
+                    <div class="card p-8 fade-in relative overflow-hidden" style="animation-delay: 1.2s; border-color: #0D3B66; border-width: 2px;">
+                        <h3 class="text-2xl cinzel text-[#0D3B66] mb-6 flex items-center relative z-10 font-bold"><span class="mr-3">🧘</span> La Puerta del Ahora</h3>
+                        <div class="relative z-10 text-[#2D3748] leading-relaxed space-y-4 text-[16px]">
+                            <p id="res-ind-tolle-1" class="quote-sapphire font-bold"></p>
+                            <p id="res-ind-tolle-2"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ACTION BAR BOTTOM -->
+                <div class="action-bar flex flex-col sm:flex-row justify-center gap-6 fade-in" style="animation-delay: 1.3s;">
+                    <button type="button" onclick="resetForm('ind')" class="px-6 py-2 bg-white border border-[#B8860B] text-[#996515] hover:bg-[#F9F6F0] transition-all rounded-full font-bold cinzel tracking-wider shadow-sm flex items-center justify-center">
+                        <span class="mr-2 text-xl">↺</span> Volver Atrás
+                    </button>
+                    <button type="button" onclick="window.print()" class="px-6 py-2 bg-[#996515] text-white hover:bg-[#1A1A24] transition-all rounded-full font-bold cinzel tracking-wider shadow-md flex items-center justify-center">
+                        <span class="mr-2 text-xl">🖨️</span> Imprimir Reporte
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- VIEW 2: PORTAL PAREJA (SINASTRÍA) -->
+        <!-- ========================================== -->
+        <div id="view-pareja" class="w-full flex flex-col items-center hidden-view">
+            
+            <!-- HERO SECTION PAREJA -->
+            <div id="hero-section-par" class="w-full max-w-4xl card p-8 md:p-12 text-center fade-in">
+                <h1 class="text-4xl md:text-5xl cinzel title-burgundy mb-4 tracking-wider font-bold">SINASTRÍA ANCESTRAL</h1>
+                <p class="text-lg font-bold quote-sapphire mb-8">Espejo de Vínculos y Pactos de Alma</p>
+                
+                <form id="oracle-form-par" class="space-y-8 text-left">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <!-- SER A -->
+                        <div class="p-6 border border-[#B8860B] rounded-xl bg-[#FAFAFA]">
+                            <h3 class="text-xl cinzel text-[#1A1A24] font-bold mb-4 border-b border-gray-300 pb-2">✨ Alma A</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-bold text-[#1A1A24] mb-1">Primer Nombre</label>
+                                    <input type="text" id="par-a-name" required class="input-field w-full rounded-lg px-3 py-2">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-[#1A1A24] mb-1">Fecha de Nacimiento</label>
+                                    <input type="date" id="par-a-date" required class="input-field w-full rounded-lg px-3 py-2">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-[#1A1A24] mb-1">Hora Aprox. (Opcional)</label>
+                                    <input type="time" id="par-a-time" class="input-field w-full rounded-lg px-3 py-2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SER B -->
+                        <div class="p-6 border border-[#B8860B] rounded-xl bg-[#FAFAFA]">
+                            <h3 class="text-xl cinzel text-[#1A1A24] font-bold mb-4 border-b border-gray-300 pb-2">✨ Alma B</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-bold text-[#1A1A24] mb-1">Primer Nombre</label>
+                                    <input type="text" id="par-b-name" required class="input-field w-full rounded-lg px-3 py-2">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-[#1A1A24] mb-1">Fecha de Nacimiento</label>
+                                    <input type="date" id="par-b-date" required class="input-field w-full rounded-lg px-3 py-2">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-[#1A1A24] mb-1">Hora Aprox. (Opcional)</label>
+                                    <input type="time" id="par-b-time" class="input-field w-full rounded-lg px-3 py-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="max-w-xl mx-auto">
+                        <label class="block text-sm font-bold text-[#1A1A24] mb-1 cinzel text-center">Tipo de Vínculo Actual</label>
+                        <select id="par-type" class="input-field w-full rounded-lg px-4 py-3 text-[15px] font-bold text-center">
+                            <option value="1">Pareja / Unión Afectiva (Alquimia Romántica y Espejo)</option>
+                            <option value="2">Hijo(a) / Progenitor (Linaje Ancestral y Maestro de Vida)</option>
+                            <option value="3">Amistad Profunda (Pacto de Almas y Hermandad)</option>
+                            <option value="4">Conexión Kármica / No Definida (Aprendizaje o Enigma)</option>
+                        </select>
+                    </div>
+
+                    <div class="pt-4 text-center">
+                        <button type="submit" id="btn-calcular-sinastria" class="w-full md:w-auto px-8 py-4 bg-[#F9F6F0] border-2 border-[#B8860B] text-[#996515] hover:bg-[#B8860B] hover:text-white transition-all duration-500 rounded-full font-bold cinzel tracking-widest text-lg pulse-gold">
+                            Revelar la Alquimia del Vínculo
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- RESULTS SECTION PAREJA -->
+            <div id="resultados-sinastria" class="w-full max-w-6xl hidden-view py-8">
+                
+                <!-- ACTION BAR TOP -->
+                <div class="action-bar flex flex-col sm:flex-row justify-center gap-6 mb-10 fade-in">
+                    <button type="button" onclick="resetForm('par')" class="px-6 py-2 bg-white border border-[#B8860B] text-[#996515] hover:bg-[#F9F6F0] transition-all rounded-full font-bold cinzel tracking-wider shadow-sm flex items-center justify-center">
+                        <span class="mr-2 text-xl">↺</span> Nueva Consulta
+                    </button>
+                    <button type="button" onclick="window.print()" class="px-6 py-2 bg-[#996515] text-white hover:bg-[#1A1A24] transition-all rounded-full font-bold cinzel tracking-wider shadow-md flex items-center justify-center">
+                        <span class="mr-2 text-xl">🖨️</span> Guardar PDF
+                    </button>
+                </div>
+
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-3xl md:text-5xl cinzel title-burgundy mb-2 font-bold">El Espejo Alquímico</h2>
+                    <p class="text-xl quote-sapphire font-bold" id="res-par-saludo">La conjunción de X y Y</p>
+                </div>
+
+                <!-- A. Pulso del Vínculo -->
+                <div class="card p-8 mb-10 fade-in border-2 border-[#B8860B]" style="animation-delay: 0.1s; background: linear-gradient(135deg, #FFF, #F9F6F0);">
+                    <h3 class="text-2xl cinzel title-burgundy font-bold mb-6 text-center">A. El Pulso del Vínculo</h3>
+                    <div class="flex flex-col md:flex-row items-center justify-around gap-8">
+                        <div class="text-center">
+                            <p class="text-sm font-bold text-[#2D3748] uppercase tracking-wider mb-2">Índice de Resonancia Cósmica</p>
+                            <div class="text-6xl font-bold text-[#996515] cinzel" id="res-par-resonancia"></div>
+                        </div>
+                        <div class="w-px h-24 bg-[#B8860B] hidden md:block opacity-30"></div>
+                        <div class="text-center md:text-left max-w-sm">
+                            <p class="text-sm font-bold text-[#2D3748] uppercase tracking-wider mb-2">Veredicto del Encuentro</p>
+                            <div class="text-2xl font-bold text-[#0D3B66] cinzel mb-2" id="res-par-tipo"></div>
+                            <p class="text-sm text-[#2D3748] italic" id="res-par-tipo-desc"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- B. Conexiones Cruzadas -->
+                <h3 class="text-2xl cinzel title-burgundy font-bold mb-6 text-center fade-in" style="animation-delay: 0.2s;">B. Conexiones Ancestrales Cruzadas</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                    
+                    <!-- Numerología -->
+                    <div class="card p-6 fade-in" style="animation-delay: 0.3s;">
+                        <h4 class="text-xl cinzel text-[#1A1A24] font-bold mb-3 border-b border-gray-200 pb-2">Sinergia Numerológica</h4>
+                        <p class="mb-2"><strong class="text-[#996515]">Número de la Relación:</strong> <span class="font-bold text-lg" id="res-par-num"></span></p>
+                        <p class="text-[15.5px] leading-relaxed text-[#2D3748]" id="res-par-num-desc"></p>
+                    </div>
+
+                    <!-- Horóscopo Chino -->
+                    <div class="card p-6 fade-in" style="animation-delay: 0.4s;">
+                        <h4 class="text-xl cinzel text-[#1A1A24] font-bold mb-3 border-b border-gray-200 pb-2">Astrología China y Tao</h4>
+                        <p class="text-[15.5px] leading-relaxed text-[#2D3748] mb-3">
+                            <strong class="text-[#0D3B66]">Cruce de Signos (<span id="res-par-signos"></span>):</strong> <span id="res-par-chino-desc"></span>
+                        </p>
+                        <p class="text-[15.5px] leading-relaxed text-[#2D3748]">
+                            <strong class="text-[#996515]">Ciclo de Elementos (<span id="res-par-elementos"></span>):</strong> <span id="res-par-ele-desc"></span>
+                        </p>
+                    </div>
+
+                    <!-- Kybalión Polaridad -->
+                    <div class="card p-6 fade-in" style="animation-delay: 0.5s;">
+                        <h4 class="text-xl cinzel text-[#1A1A24] font-bold mb-3 border-b border-gray-200 pb-2">Polaridad Hermética</h4>
+                        <p class="text-[15.5px] leading-relaxed text-[#2D3748]" id="res-par-kybalion"></p>
+                    </div>
+
+                    <!-- Cruce Mapuche/Sumerio -->
+                    <div class="card p-6 fade-in" style="animation-delay: 0.6s;">
+                        <h4 class="text-xl cinzel text-[#1A1A24] font-bold mb-3 border-b border-gray-200 pb-2">Cruce Ancestral (Fuerzas y Arquetipos)</h4>
+                        <p class="text-[15.5px] leading-relaxed text-[#2D3748]" id="res-par-ancestral"></p>
+                    </div>
+                </div>
+
+                <!-- C. Vidas Pasadas y Pacto Kármico -->
+                <div class="card p-8 mb-10 fade-in border-[3px] border-double border-[#996515] bg-[#FFF]" style="animation-delay: 0.65s;">
+                    <h3 class="text-2xl cinzel text-[#996515] font-bold mb-4 flex items-center"><span class="mr-3">♾️</span> C. ¿Se conocían en vidas pasadas?</h3>
+                    <p class="text-[16px] leading-relaxed text-[#2D3748] mb-4">
+                        <strong class="text-[#0D3B66] text-lg" id="res-par-vidas-diag"></strong><br>
+                        <span id="res-par-vidas-desc"></span>
+                    </p>
+                    <p class="text-[16px] leading-relaxed text-[#2D3748]">
+                        <strong class="text-[#1A1A24]">La Promesa Invisible:</strong> <span id="res-par-vidas-promesa"></span>
+                    </p>
+                </div>
+
+                <!-- D. Sombras y Puntos de Quiebre -->
+                <div class="card p-8 mb-10 fade-in border-2 border-[#1A1A24]" style="animation-delay: 0.7s; background-color: #FAF8F5;">
+                    <h3 class="text-2xl cinzel text-[#1A1A24] font-bold mb-4 flex items-center"><span class="mr-3">🌑</span> D. Sombras y Puntos de Quiebre</h3>
+                    <p class="text-sm font-bold text-[#601A24] mb-4 uppercase tracking-wider">Un análisis honesto sin maquillaje</p>
+                    <div class="text-[16px] leading-relaxed text-[#2D3748] space-y-4" id="res-par-sombras"></div>
+                </div>
+
+                <!-- E. Consejo Eckhart Tolle -->
+                <div class="card p-8 mb-10 fade-in border-2 border-[#0D3B66] bg-[#FAFAFA]" style="animation-delay: 0.8s;">
+                    <h3 class="text-2xl cinzel text-[#0D3B66] font-bold mb-4 flex items-center"><span class="mr-3">🧘</span> E. El Consejo del Ahora para el Vínculo</h3>
+                    <div class="text-[16px] leading-relaxed text-[#2D3748] space-y-4" id="res-par-tolle-box">
+                        <!-- Dynamic Eckhart Tolle Advice gets injected here -->
+                    </div>
+                </div>
+
+                <!-- ACTION BAR BOTTOM -->
+                <div class="action-bar flex flex-col sm:flex-row justify-center gap-6 fade-in" style="animation-delay: 0.9s;">
+                    <button type="button" onclick="resetForm('par')" class="px-6 py-2 bg-white border border-[#B8860B] text-[#996515] hover:bg-[#F9F6F0] transition-all rounded-full font-bold cinzel tracking-wider shadow-sm flex items-center justify-center">
+                        <span class="mr-2 text-xl">↺</span> Volver Atrás
+                    </button>
+                    <button type="button" onclick="window.print()" class="px-6 py-2 bg-[#996515] text-white hover:bg-[#1A1A24] transition-all rounded-full font-bold cinzel tracking-wider shadow-md flex items-center justify-center">
+                        <span class="mr-2 text-xl">🖨️</span> Imprimir Reporte
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        // --- NAVIGATION TABS ---
+        const btnInd = document.getElementById('btn-tab-individual');
+        const btnPar = document.getElementById('btn-tab-pareja');
+        const viewInd = document.getElementById('view-individual');
+        const viewPar = document.getElementById('view-pareja');
+
+        btnInd.addEventListener('click', () => {
+            btnInd.classList.add('active');
+            btnPar.classList.remove('active');
+            viewInd.classList.remove('hidden-view');
+            viewPar.classList.add('hidden-view');
+        });
+
+        btnPar.addEventListener('click', () => {
+            btnPar.classList.add('active');
+            btnInd.classList.remove('active');
+            viewPar.classList.remove('hidden-view');
+            viewInd.classList.add('hidden-view');
+        });
+
+        // --- FUNCION DE RESET (NUEVA CONSULTA) ---
+        function resetForm(type) {
+            if (type === 'ind') {
+                document.getElementById('resultados-individual').classList.add('hidden-view');
+                document.getElementById('hero-section-ind').style.display = 'block';
+                document.getElementById('oracle-form-ind').reset();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                setTimeout(() => document.getElementById('ind-name').focus(), 500);
+            } else if (type === 'par') {
+                document.getElementById('resultados-sinastria').classList.add('hidden-view');
+                document.getElementById('hero-section-par').style.display = 'block';
+                document.getElementById('oracle-form-par').reset();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                setTimeout(() => document.getElementById('par-a-name').focus(), 500);
+            }
+        }
+
+        // --- FUNCIONES COMUNES ---
+        function reducirNumero(num) {
+            let n = parseInt(num, 10);
+            if (isNaN(n)) return 0;
+            if (n === 11 || n === 22 || n === 33) return n;
+            while (n > 9 && n !== 11 && n !== 22 && n !== 33) {
+                n = n.toString().split('').reduce((sum, d) => sum + parseInt(d, 10), 0);
+            }
+            return n;
+        }
+
+        const gematria = {
+            a:1, b:2, c:3, d:4, e:5, f:6, g:7, h:8, i:9,
+            j:1, k:2, l:3, m:4, n:5, o:6, p:7, q:8, r:9,
+            s:1, t:2, u:3, v:4, w:5, x:6, y:7, z:8, 'ñ': 5
+        };
+
+        function calcularGematria(nombre) {
+            let suma = 0;
+            const str = nombre.toLowerCase().replace(/[^a-záéíóúüñ]/g, '');
+            for (let char of str) {
+                let c = char;
+                if(c==='á')c='a'; if(c==='é')c='e'; if(c==='í')c='i'; if(c==='ó')c='o'; if(c==='ú'||c==='ü')c='u';
+                suma += gematria[c] || 0;
+            }
+            return reducirNumero(suma);
+        }
+
+        // ==========================================
+        // LÓGICA: PORTAL INDIVIDUAL
+        // ==========================================
+        
+        const dateNow = new Date();
+        document.getElementById('ind-current-date').value = `${dateNow.getFullYear()}-${String(dateNow.getMonth() + 1).padStart(2, '0')}-${String(dateNow.getDate()).padStart(2, '0')}`;
+
+        document.getElementById('oracle-form-ind').addEventListener('submit', function(e) {
+            e.preventDefault();
+            try {
+                const nombre = document.getElementById('ind-name').value.trim();
+                const bDateStr = document.getElementById('ind-date').value;
+                const bTimeStr = document.getElementById('ind-time').value || "12:00";
+                const cDateStr = document.getElementById('ind-current-date').value;
+
+                if (!nombre || !bDateStr || !cDateStr) return;
+
+                const bDate = bDateStr.split('-');
+                const bTime = bTimeStr.split(':');
+                const cDate = cDateStr.split('-');
+
+                const bYear = parseInt(bDate[0], 10); const bMonth = parseInt(bDate[1], 10); const bDay = parseInt(bDate[2], 10);
+                const bHour = parseInt(bTime[0], 10); const bMin = parseInt(bTime[1], 10);
+                const cYear = parseInt(cDate[0], 10); const cMonth = parseInt(cDate[1], 10); const cDay = parseInt(cDate[2], 10);
+
+                const numCamino = reducirNumero(bYear + bMonth + bDay);
+                const numDestino = calcularGematria(nombre);
+                const anoPersonal = reducirNumero(bDay + bMonth + cYear);
+                const sumTotal = numCamino + (isNaN(bHour)?12:bHour) + (isNaN(bMin)?0:bMin);
+
+                // Luna
+                let r = bYear % 100; r %= 19; if(r>9) r-=19;
+                r = ((r * 11) % 30) + bMonth + bDay; if(bMonth<3) r+=2;
+                r -= ((bYear<2000)?4:8.3); r = Math.floor(r + 0.5) % 30; let resLuna = (r<0)?r+30:r;
+                let pLuna = {i:"🌘", n:"Luna Menguante", d:"Alma sabia. Vienes a soltar, enseñar y cerrar ciclos."};
+                if(resLuna<2 || resLuna>28) pLuna = {i:"🌑", n:"Luna Nueva", d:"Alma sembradora con intuición inmensa y capacidad para renacer."};
+                else if(resLuna>=2 && resLuna<14) pLuna = {i:"🌒", n:"Luna Creciente", d:"Alma en expansión. Vienes a construir y manifestar visiones vitales."};
+                else if(resLuna>=14 && resLuna<=16) pLuna = {i:"🌕", n:"Luna Llena", d:"Alma iluminada. Tu energía es magnética y emocionalmente intensa."};
+
+                // Memoria y Edad del Alma
+                let edadAlma = ""; let memAlma = "";
+                if (numCamino === 11 || numCamino === 22 || numCamino === 33) {
+                    edadAlma = "Alma Maestra / Trascendente";
+                    memAlma = "Traes dones de sanación y liderazgo espiritual de vidas antiguas. Tu gran reto es soltar el peso del 'salvador' y vivir con ligereza terrenal para no agotar tu luz.";
+                } else if (numCamino === 9 || numCamino === 8 || resLuna < 2 || (resLuna>16 && resLuna<28)) {
+                    edadAlma = "Alma Vieja / Ancestral";
+                    memAlma = "Posees una sabiduría innata y a menudo sientes que 'no encajas' en la prisa del mundo moderno. Vienes a soltar el apego al control y lograr el desapego compasivo.";
+                } else if (numCamino >= 4 && numCamino <= 7) {
+                    edadAlma = "Alma en Aprendizaje / Forjadora";
+                    memAlma = "Estás en el clímax de la maestría de tu carácter. Traes grandes talentos prácticos e intelectuales, pero vienes a soltar la rigidez mental y atreverte a fluir.";
+                } else {
+                    edadAlma = "Alma Semilla / Exploradora Inicial";
+                    memAlma = "Tu espíritu viene con una frescura inmensa, sin ataduras kármicas densas del pasado. Vienes a experimentar la individualidad, la alegría terrenal y soltar la dependencia.";
+                }
+
+                // Numerología
+                const significadosNumerologia = {
+                    1: "Liderar con originalidad y encontrar tu propia voz. El desafío es la independencia sin egoísmo.",
+                    2: "Vienes a sanar y colaborar. El desafío es no perderte en el otro y confiar en tu intuición.",
+                    3: "Tu esencia es el arte y la comunicación. El desafío es la dispersión y la duda de ti mismo.",
+                    4: "Establecer bases sólidas. El desafío es la rigidez mental y el exceso de pragmatismo.",
+                    5: "Vienes a experimentar y fluir. El desafío es la inconstancia y los excesos sensuales.",
+                    6: "El amor y la familia son tu faro. El desafío es cuidarte a ti mismo sin asfixiar a los demás.",
+                    7: "Misión de hallar la verdad profunda. El desafío es el aislamiento y el escepticismo.",
+                    8: "Dominar el mundo material y el poder espiritual. El desafío es el control y la ambición.",
+                    9: "Cierre de ciclos y amor universal. El desafío es el desapego total y perdonar el pasado.",
+                    11: "Inspiración intuitiva profunda. Canalizas energías para despertar a otros.",
+                    22: "Capacidad de materializar grandes proyectos espirituales a escala global.",
+                    33: "El amor incondicional y el sacrificio consciente por la humanidad."
+                };
+
+                // Kybalion
+                const pKyb = [
+                    { n: "Mentalismo", a: "El Todo es Mente; el Universo es mental.", d: "Tus pensamientos moldean el barro de tu destino." },
+                    { n: "Correspondencia", a: "Como es arriba, es abajo.", d: "Tu viaje interior resolverá tus bloqueos exteriores." },
+                    { n: "Vibración", a: "Nada está inmóvil; todo vibra.", d: "Eleva tu frecuencia para atraer lo que resuena." },
+                    { n: "Polaridad", a: "Todo es doble; todo tiene dos polos.", d: "Integra sombras y luces. Miedo y amor son la misma energía." },
+                    { n: "Ritmo", a: "Todo fluye y refluye.", d: "Aprende a fluir con la marea cósmica. No resistas los inviernos." },
+                    { n: "Causa y Efecto", a: "Toda causa tiene su efecto.", d: "Maestría en tus acciones para sembrar semillas luminosas." },
+                    { n: "Generación", a: "La generación existe por doquier.", d: "Matrimonio alquímico interior: unir tu fuerza y receptividad." }
+                ][(isNaN(sumTotal)?0:sumTotal) % 7];
+
+                // Arquetipo
+                const pArq = [
+                    { a: "El Sabio Contemplativo", v: "\"En la quietud será vuestra fortaleza.\"", d: "Guardián de los misterios silentes." },
+                    { a: "El Profeta del Viento", v: "\"El viento sopla de donde quiere...\"", d: "Tu voz rompe velos y pronuncia verdades." },
+                    { a: "El Constructor del Arca", v: "\"Preparó el arca para la salvación.\"", d: "Edificas refugios antes de las tormentas." },
+                    { a: "El Pastor Compasivo", v: "\"El Señor es mi pastor, nada me faltará.\"", d: "Faro para los corazones extraviados." },
+                    { a: "El Sembrador Cósmico", v: "\"El que siembra buena semilla...\"", d: "El universo cosecha tu amor en cada acción." }
+                ][(bDay + numDestino) % 5];
+
+                // Maya
+                const diffDays = Math.round((new Date(bYear, bMonth-1, bDay) - new Date(1992, 6, 25)) / 86400000);
+                let kinNum = (134 + diffDays) % 260; if(kinNum<=0) kinNum+=260;
+                const sMayas = ["Dragón (Nacimiento)", "Viento (Espíritu)", "Noche (Abundancia)", "Semilla (Florecimiento)", "Serpiente (Fuerza Vital)", "Enlazador (Oportunidad)", "Mano (Sanación)", "Estrella (Arte)", "Luna (Purificación)", "Perro (Corazón)", "Mono (Magia)", "Humano (Sabiduría)", "Caminante (Explorar)", "Mago (Atemporalidad)", "Águila (Visión)", "Guerrero (Inteligencia)", "Tierra (Sincronicidad)", "Espejo (Sin Fin)", "Tormenta (Autogeneración)", "Sol (Iluminación)"];
+                const tMayas = ["Magnético", "Lunar", "Eléctrico", "Autoexistente", "Entonado", "Rítmico", "Resonante", "Galáctico", "Solar", "Planetario", "Espectral", "Cristal", "Cósmico"];
+                const pMaya = {n:`Kin ${kinNum} - ${sMayas[(kinNum-1)%20].split(' ')[0]} ${tMayas[(kinNum%13===0?13:kinNum%13)-1]}`, d:`Misión: ${sMayas[(kinNum-1)%20].match(/\(([^)]+)\)/)[1]}.`};
+
+                // Mapuche
+                const pMapuche = [
+                    { e: "Antü (El Sol)", d: "Eres portador de la luz del día y vitalidad." },
+                    { e: "Küyen (La Luna)", d: "Hijo de las aguas. Sensibilidad y sueños." },
+                    { e: "Wanglen (Estrellas)", d: "Tu newen es la conexión cósmica y visión profunda." },
+                    { e: "Mawida (Montaña)", d: "Raíces profundas. Tu newen es firmeza y protección." }
+                ][(numCamino + bMonth) % 4];
+
+                // Chino
+                const aChinos = ["Mono", "Gallo", "Perro", "Cerdo", "Rata", "Buey", "Tigre", "Conejo", "Dragón", "Serpiente", "Caballo", "Cabra"];
+                const eChinos = ["Metal", "Metal", "Agua", "Agua", "Madera", "Madera", "Fuego", "Fuego", "Tierra", "Tierra"];
+                const eDescChinos = ["Firmeza y estructura.", "Firmeza y estructura.", "Adaptabilidad y misterio.", "Adaptabilidad y misterio.", "Crecimiento y creatividad.", "Crecimiento y creatividad.", "Pasión y transformación.", "Pasión y transformación.", "Estabilidad y nutrición.", "Estabilidad y nutrición."];
+                const pChino = { animal: aChinos[bYear%12], elemento: `${eChinos[bYear%10]} - ${(bYear%2===0)?"Yang":"Yin"}`, desc: eDescChinos[bYear%10] };
+
+                // Sumerio
+                const pSumerio = [
+                    { n: "Enki", a: "Las aguas traen la forma.", d: "Señor de la alquimia, intelecto y sabiduría profunda." },
+                    { n: "Inanna (Ishtar)", a: "Emerge portando estrellas.", d: "Diosa de la pasión, el poder y la transformación." },
+                    { n: "Enlil", a: "El viento firme dirige la nave.", d: "Señor del destino y las leyes cósmicas." },
+                    { n: "Utu (Shamash)", a: "La luz no esconde mentira.", d: "Dios de la claridad mental y la justicia." },
+                    { n: "Ninhursag", a: "De la roca nace la vida.", d: "Gran Madre. Vienes a fertilizar ideas y cuidar." }
+                ][(numCamino + numDestino + bDay) % 5];
+
+                // Render Ind
+                document.getElementById('res-ind-saludo').innerText = `Bienvenido, ${nombre}`;
+                
+                document.getElementById('res-ind-alma-edad').innerText = edadAlma;
+                document.getElementById('res-ind-alma-desc').innerText = memAlma;
+
+                document.getElementById('res-ind-camino').innerText = numCamino; document.getElementById('res-ind-destino').innerText = numDestino; document.getElementById('res-ind-num-desc').innerText = significadosNumerologia[numCamino] || significadosNumerologia[1];
+                document.getElementById('res-ind-kybalion-nombre').innerText = pKyb.n; document.getElementById('res-ind-kybalion-axioma').innerText = pKyb.a; document.getElementById('res-ind-kybalion-desc').innerText = pKyb.d;
+                document.getElementById('res-ind-arquetipo').innerText = pArq.a; document.getElementById('res-ind-versiculo').innerText = pArq.v; document.getElementById('res-ind-arq-desc').innerText = pArq.d;
+                document.getElementById('res-ind-luna-icon').innerText = pLuna.i; document.getElementById('res-ind-luna-nombre').innerText = pLuna.n; document.getElementById('res-ind-luna-desc').innerText = pLuna.d;
+                document.getElementById('res-ind-maya-nombre').innerText = pMaya.n; document.getElementById('res-ind-maya-desc').innerText = pMaya.d;
+                document.getElementById('res-ind-mapuche-elemento').innerText = pMapuche.e; document.getElementById('res-ind-mapuche-desc').innerText = pMapuche.d;
+                document.getElementById('res-ind-chino-signo').innerText = pChino.animal; document.getElementById('res-ind-chino-elemento').innerText = pChino.elemento; document.getElementById('res-ind-chino-desc').innerText = pChino.desc;
+                document.getElementById('res-ind-sumerio-dios').innerText = pSumerio.n; document.getElementById('res-ind-sumerio-aforismo').innerText = pSumerio.a; document.getElementById('res-ind-sumerio-desc').innerText = pSumerio.d;
+
+                const rAno = ["", "Siembra y nuevos comienzos. Emprender.", "Gestación, paciencia y cooperación.", "Florecimiento, creatividad y expresión.", "Estructura, trabajo y bases sólidas.", "Aventura, libertad y transformación.", "Amor, hogar y sanación de vínculos.", "Introspección, meditación y sabiduría.", "Poder, cosecha kármica y abundancia.", "Cierre de ciclos, perdón y soltar."];
+                document.getElementById('res-ind-ano').innerText = anoPersonal; document.getElementById('res-ind-ano-desc').innerText = `Año de ${rAno[anoPersonal]||"Maestría espiritual."}`;
+                
+                const tolleMsgs = ["No eres la voz en tu cabeza. Observa el pensamiento, sonríele, y vuelve al momento presente.", "La mayor parte del dolor es resistencia a lo que es. Ríndete al presente.", "El pasado no tiene poder. Todo lo que tienes es este instante.", "Reconoce que toda negatividad es resistencia. Acepta el ahora.", "Sentir el cuerpo te ancla en el presente. La vitalidad silenciosa disuelve el ego."];
+                document.getElementById('res-ind-tolle-1').innerText = tolleMsgs[(isNaN(sumTotal)?0:sumTotal) % 5];
+                
+                document.getElementById('hero-section-ind').style.display = 'none';
+                const contResultados = document.getElementById('resultados-individual');
+                contResultados.classList.remove('hidden-view');
+                contResultados.scrollIntoView({ behavior: 'smooth' });
+
+            } catch (err) {
+                console.error("Error procesando Portal Individual:", err);
+                alert("Ocurrió un error en el cálculo de la matriz. Revisa los datos e intenta de nuevo.");
+            }
+        });
+
+        // ==========================================
+        // LÓGICA: SINASTRÍA PAREJA
+        // ==========================================
+        document.getElementById('oracle-form-par').addEventListener('submit', function(e) {
+            e.preventDefault();
+            try {
+                const nA = document.getElementById('par-a-name').value.trim();
+                const rawDateA = document.getElementById('par-a-date').value;
+                const rawTimeA = document.getElementById('par-a-time').value || "12:00";
+                
+                const nB = document.getElementById('par-b-name').value.trim();
+                const rawDateB = document.getElementById('par-b-date').value;
+                const rawTimeB = document.getElementById('par-b-time').value || "12:00";
+                
+                const typeLink = parseInt(document.getElementById('par-type').value, 10);
+
+                if (!nA || !rawDateA || !nB || !rawDateB) {
+                    alert("Por favor completa los nombres y fechas de nacimiento de ambos seres.");
+                    return;
+                }
+
+                const bDateA = rawDateA.split('-');
+                const bDateB = rawDateB.split('-');
+
+                const yearA = parseInt(bDateA[0], 10); const monthA = parseInt(bDateA[1], 10); const dayA = parseInt(bDateA[2], 10);
+                const yearB = parseInt(bDateB[0], 10); const monthB = parseInt(bDateB[1], 10); const dayB = parseInt(bDateB[2], 10);
+
+                const camA = reducirNumero(yearA + monthA + dayA);
+                const camB = reducirNumero(yearB + monthB + dayB);
+                const destA = calcularGematria(nA);
+                const destB = calcularGematria(nB);
+
+                let resonance = 50;
+
+                // Chino: Animales
+                const aChinos = ["Mono", "Gallo", "Perro", "Cerdo", "Rata", "Buey", "Tigre", "Conejo", "Dragón", "Serpiente", "Caballo", "Cabra"];
+                const animalA = yearA % 12; const animalB = yearB % 12;
+                const distAnimal = Math.abs(animalA - animalB);
+                let txtAnimal = "";
+                if (distAnimal === 0) { txtAnimal = "Mismo signo (Espejo mutuo profundo). Entienden sus naturalezas pero pueden chocar por sus terquedades idénticas."; resonance += 15; }
+                else if (distAnimal === 6) { txtAnimal = "Oposición directa (Choque). Fricción intensa. Gran atracción magnética pero enormes desafíos de convivencia. Maestría en la tolerancia."; resonance -= 15; }
+                else if (distAnimal === 4 || distAnimal === 8) { txtAnimal = "Trígono de afinidad (Armonía Excelente). Fluyen juntos con naturalidad y comparten visiones de vida sumamente compatibles."; resonance += 25; }
+                else if (distAnimal === 3 || distAnimal === 9) { txtAnimal = "Cuadratura (Tensión de Crecimiento). Hay desafío constante que los obliga a crecer o los agota si prevalece el ego."; resonance -= 5; }
+                else { txtAnimal = "Alianza neutral/complementaria. El vínculo se edifica con consciencia y voluntad, más allá de la predestinación."; resonance += 10; }
+
+                // Chino: Elementos
+                const getEle = y => { const d = y%10; if(d<=1)return 0; if(d<=3)return 1; if(d<=5)return 2; if(d<=7)return 3; return 4; };
+                const eA = getEle(yearA); const eB = getEle(yearB);
+                const namesEle = ["Metal", "Agua", "Madera", "Fuego", "Tierra"];
+                let txtEle = "";
+                if(eA === eB) { txtEle = "Mismo elemento. Potencian exponencialmente sus virtudes, pero corren el riesgo de estancarse en sus propios defectos."; resonance+=10; }
+                else if ((eA+1)%5 === eB) { txtEle = `Ciclo Creativo: La energía fluye maravillosamente. ${namesEle[eA]} nutre y da vida a ${namesEle[eB]} de forma natural.`; resonance+=20; }
+                else if ((eB+1)%5 === eA) { txtEle = `Ciclo Creativo: La energía fluye. ${namesEle[eB]} nutre a ${namesEle[eA]}. Relación profunda de cuidado.`; resonance+=20; }
+                else { txtEle = `Ciclo de Control/Destructivo (${namesEle[eA]} vs ${namesEle[eB]}). Atracción fuerte con luchas de poder subconscientes. Genera fricción y enormes lecciones del alma.`; resonance-=10; }
+
+                // Offset por tipo
+                if(typeLink === 4) resonance -= 5; // Karmica es desafiante
+                if(resonance > 99) resonance = 99; if(resonance < 20) resonance = 25;
+
+                // Veredicto Dinámico según typeLink
+                let veredicto = "", veredictoDesc = "";
+                
+                const dictTipos = {
+                    1: { // Pareja
+                        t1: ["Almas Gemelas (Armonía Romántica)", "Vínculo fluido, diseñado para el amor pacífico, la nutrición mutua y crear un refugio en el mundo."],
+                        t2: ["Compañeros de Camino (Evolución)", "Una alianza sólida basada en proyectos de vida comunes, respeto y trabajo amoroso consciente."],
+                        t3: ["Maestros Mutuos (Espejos)", "Gran pasión romántica combinada con el reflejo de sus sombras. Relación de profundo aprendizaje."],
+                        t4: ["Almas Kármicas (Fricción)", "Vinieron a saldar deudas del alma amorosas, detonar traumas y obligarse a despertar mediante la fricción pasional."]
+                    },
+                    2: { // Hijo/Padre
+                        t1: ["Linaje de Luz (Armonía Ancestral)", "Pactaron encarnar juntos para cuidarse desde la más profunda paz y aceptación. Sus almas fluyen naturalmente."],
+                        t2: ["Guías de Vida (Evolución)", "Más que jerarquía, son almas compañeras que se eligieron para aprender el uno del otro en esta línea temporal."],
+                        t3: ["Maestros Mutuos (Espejos de Sangre)", "El hijo es el maestro del padre, y el padre el ancla del hijo. Un espejo puro de paciencia y confrontación de ego."],
+                        t4: ["Sanación Kármica Familiar", "Han invertido roles en vidas pasadas. Vienen a sanar el árbol genealógico y cortar cadenas ancestrales a través del perdón."]
+                    },
+                    3: { // Amistad
+                        t1: ["Hermandad Cósmica (Armonía)", "Una amistad inquebrantable y sin fricciones, donde el refugio emocional y la lealtad de almas son absolutos."],
+                        t2: ["Colegas de Evolución", "Se eligieron para apoyarse en sus propósitos de vida, compartiendo visiones y creciendo juntos sin ataduras asfixiantes."],
+                        t3: ["Espejos de Amistad (Desafío)", "Amistad intensa donde ambos proyectan sus sombras. Las diferencias los obligan a expandir su visión del mundo."],
+                        t4: ["Pacto Kármico Amistoso", "Amigos que se desafían o compiten sutilmente para obligarse a crecer y saldar un pacto antiguo."]
+                    },
+                    4: { // Karmica/No definida
+                        t1: ["Encuentro de Luz (Paz Inexplicable)", "Un encuentro de reconocimiento instantáneo, diseñado para traer paz y luz al trayecto del otro."],
+                        t2: ["Intersección de Destinos", "Almas que coincidieron misteriosamente para ayudarse en un tramo crucial del camino y luego continuar su propia evolución."],
+                        t3: ["Maestría del Ego", "Un choque magnético destinado a derribar las estructuras y miedos del otro, trascendiendo las etiquetas terrenales."],
+                        t4: ["El Enigma Kármico (Ajuste)", "Se atraen o chocan fuertemente para saldar una energía que quedó pendiente de otra era."]
+                    }
+                };
+
+                const catVeredicto = resonance >= 85 ? 't1' : (resonance >= 70 ? 't2' : (resonance >= 46 ? 't3' : 't4'));
+                const selDict = dictTipos[typeLink] || dictTipos[4];
+                veredicto = selDict[catVeredicto][0];
+                veredictoDesc = selDict[catVeredicto][1];
+
+                // Numerología Pareja
+                const numPareja = reducirNumero(camA + camB);
+                
+                const numParejaDesc = {
+                    1: `Vínculo Pionero. Vienen a emprender algo nuevo y a mantener su individualidad sin depender del otro. El desafío principal es evitar competir entre ustedes.`,
+                    2: `Vínculo Sanador. Vienen a ser un refugio emocional seguro, a cooperar y nutrirse. Cuidado con la codependencia o perder los límites personales.`,
+                    3: `Vínculo Creador. Relación alegre, social, llena de expresión y magnetismo. Suelen inspirar al entorno. Cuidado con la dispersión y las exigencias infantiles.`,
+                    4: `Vínculo Constructor. Vienen a sentar bases sólidas y edificar estructuras (hogar, valores o proyectos). Riesgo: caer en la rutina aplastante y la frialdad.`,
+                    5: `Vínculo Libre. Aventura constante, transformaciones y libertad de movimiento. La independencia es innegociable. Cuidado con la inestabilidad.`,
+                    6: `Vínculo Protector. Búsqueda profunda de cuidado y belleza compartida. Responsabilidad afectiva alta. Riesgo de asfixiarse intentando 'salvar' o sobreproteger al otro.`,
+                    7: `Vínculo Místico. Relación introspectiva; vienen a buscar verdades espirituales juntos. Respetan el silencio. Cuidado con el aislamiento y la distancia emocional.`,
+                    8: `Vínculo de Poder. Cosecha kármica pura. Vienen a manifestar en el plano material y empoderarse mutuamente. Riesgo latente de dominación y control.`,
+                    9: `Vínculo Trascendente. Amor humanista y cierre de ciclos. Vínculo lleno de compasión pero desapegado. El reto es aceptar al otro sin expectativas terrenales egoístas.`
+                };
+
+                // Kybalion y Ancestral
+                const pKyb = ["Su dinámica está regida por la Vibración: sus frecuencias chocan y se afinan constantemente.", "Regidos por la Polaridad: son opuestos complementarios que deben evitar el extremismo ideológico.", "Regidos por el Ritmo: esta unión pasará por altas mareas y profundos reflujos; no teman a las pausas y al silencio.", "Regidos por Generación: el polo receptivo e intuitivo de uno alimenta la acción proactiva del otro."];
+                const pAnc = ["Las aguas profundas de Enki se mezclan con la fuerza de Inanna; intelecto y fuerza vital como motores.", "La fuerza del Sol (Antü) se alza ante la introspección de la Luna (Küyen). El día y la noche se funden.", "La estructura de la Montaña (Mawida) abraza al Viento veloz de Enlil. Uno ancla, el otro eleva."];
+
+                // Vidas Pasadas y Pacto
+                const sumVidas = (camA + camB + destA + destB) % 3;
+                const diagVidas = ["Reencuentro de Almas (Familiaridad)", "Ajuste de Deuda Kármica (Sanación)", "Encuentro Inédito (Karma Nuevo)"];
+                const diagVidasDesc = [
+                    "Han compartido múltiples encarnaciones. La profunda familiaridad, confianza (o rechazo inmediato) desde el primer día que se conocieron no fue casualidad; sus almas ya viajaron juntas antes.",
+                    "El vínculo viene a sanar un desequilibrio, herida o promesa rota de otra época mediante el perdón incondicional. La fricción que a veces sienten es parte crucial de esta purga espiritual.",
+                    "Sus espíritus coinciden por primera vez en esta línea temporal cósmica. Vienen a sembrar un karma fresco y crear aprendizajes nuevos sin ataduras pesadas del pasado."
+                ];
+                const promesaVidas = [
+                    `Un pacto de despertar consciente. <strong class="text-[#1A1A24]">${nA}</strong> suele anclar la realidad material y la lógica, mientras <strong class="text-[#1A1A24]">${nB}</strong> expande la visión espiritual o emocional del vínculo.`,
+                    `Un pacto de protección mutua. <strong class="text-[#1A1A24]">${nB}</strong> prometió cuidar la vulnerabilidad de <strong class="text-[#1A1A24]">${nA}</strong> en esta vida, mientras <strong class="text-[#1A1A24]">${nA}</strong> enseña el valor de la independencia.`,
+                    `Un pacto de espejo total. Ambos firmaron un acuerdo de almas para detonar las sombras y miedos del otro hasta que no quede más remedio que la aceptación compasiva.`
+                ];
+
+                // MOTORES DINÁMICOS: SOMBRAS Y CONSEJOS (100% basados en matemáticas y tipos)
+                const motorSombras = {
+                    1: { s: "Lucha de Egos y Competencia", d: "El riesgo latente es que uno intente imponerse o dominar al otro, midiendo quién brilla más o quién tiene la razón constante.", c: "Desarmar el liderazgo individual y aprender a compartir el timón desde la horizontalidad, sin sentir que ceder es perder." },
+                    2: { s: "Codependencia y Resentimiento Silencioso", d: "Existe la tendencia a callar necesidades para evitar conflictos, acumulando frustración hasta que el volcán emocional estalla.", c: "Comunicación asertiva y establecimiento de límites claros. Amar es también atreverse a decir 'no'." },
+                    3: { s: "Dispersión, Superficialidad y Falta de Compromiso", d: "La sombra aparece al evadir conversaciones serias o dolorosas con bromas, distracciones o drama infantil.", c: "Enraizarse y tener el coraje de sostener la incomodidad de la madurez emocional sin huir hacia lo fácil." },
+                    4: { s: "Rigidez Mental, Rutina Asfixiante y Control", d: "El miedo al cambio puede atraparlos en estructuras, deberes y previsibilidad, matando por completo la espontaneidad.", c: "Flexibilidad. Atreverse a romper la rutina y soltar la necesidad ilusoria de tener todo bajo control absoluto." },
+                    5: { s: "Inestabilidad, Impulsividad y Fuga Emocional", d: "Cuando la relación exige raíces, madurez o enfrentar la monotonía, la mente impulsiva busca huir hacia lo nuevo.", c: "Presencia y templanza en la tormenta. Comprender que la verdadera libertad también se encuentra en el compromiso profundo." },
+                    6: { s: "Sobreprotección, Asfixia y Exigencia de Perfección", d: "El ego se disfraza de 'salvador', queriendo reparar, sobreproteger o moldear al otro a una imagen ideal inalcanzable.", c: "Amor incondicional genuino: aceptar la imperfección humana del otro sin pretender cambiarlo ni asfixiarlo." },
+                    7: { s: "Distancia Emocional, Desconfianza e Hiper-Racionalidad", d: "La tendencia a aislarse en la mente, analizar en exceso los sentimientos y levantar armaduras por miedo a ser vulnerables.", c: "Vulnerabilidad compartida. Atreverse a abrir el corazón y confiar sin buscar constantes garantías lógicas." },
+                    8: { s: "Juegos de Poder, Materialismo y Manipulación", d: "Medir constantemente quién aporta más (emocional, intelectual o financieramente) o quién tiene la última palabra. La dominación sutil.", c: "Rendición del ego, generosidad desinteresada y comprender que el verdadero poder nace de la suavidad." },
+                    9: { s: "Dramatismo Kármico, Salvadores y Víctimas", d: "Aferrarse a ciclos emocionales que ya caducaron por culpa, nostalgia, miedo a la soledad o un falso sentido del deber sagrado.", c: "Desapego sagrado y perdón radical. Soltar el peso muerto del pasado para permitir que el vínculo respire en el hoy." }
+                };
+                // Fallback para maestros o si falla el parsing, usando numPareja (1 a 9)
+                let numSombraData = motorSombras[numPareja] || motorSombras[1];
+                if (numPareja === 11 || numPareja === 22 || numPareja === 33) {
+                    numSombraData = { s: "Idealización Extrema y Autoexigencia Espiritual", d: "Proyectar una imagen mesiánica o de perfección infalible en el otro, y desmoronarse con severidad inmensa ante sus inevitables fallas humanas.", c: "Aceptar profundamente la humanidad, los instintos y los defectos terrenales sin perder la admiración del amor espiritual." };
+                }
+
+                const motorTolle = {
+                    1: { // Pareja
+                        t: "No busques en tu pareja tu salvación o aquello que crees que te falta. Si usas la relación para anestesiar el dolor de tu ego, solo conseguirás que el 'cuerpo-dolor' aflore con más violencia. Cuando la fricción nazca, no reacciones desde la historia mental del pasado; ancla tu atención en la respiración, disuelve el conflicto en presencia, y recuerda que el otro está ahí para hacerte consciente, no para hacerte feliz a costa del ego.",
+                        q: "\"Buscamos la salvación a través de una relación, pero el otro solo sacará a la superficie nuestro dolor inconsciente para que podamos sanarlo.\""
+                    },
+                    2: { // Hijo/Padre
+                        t: "Desidentifícate del rígido rol de 'dueño', 'autoridad absoluta' o 'hacedor' del destino de tu hijo. Comprende profundamente esta antigua verdad: los hijos vienen a través de ti, pero no te pertenecen. Son almas soberanas que el universo te ha confiado. El mayor y más transformador regalo que puedes darle a tu linaje no es proyectar tus expectativas, miedos o deseos frustrados en ellos, sino brindarles la pureza de tu Presencia total.",
+                        q: "\"Eres el arco desde el cual tus hijos, como flechas vivas, son impulsados hacia el infinito. Sé un ancla de Presencia, no de control.\""
+                    },
+                    3: { // Amistad
+                        t: "El verdadero milagro de una amistad profunda florece en el terreno de la libertad incondicional. Celebra el encuentro sagrado en el Ahora sin generar apegos posesivos, exigencias o reclamos infantiles. Observa y acepta la evolución inevitable del otro, sus errores o sus cambios de ruta, sin juzgarlo moralmente. Una verdadera hermandad no exige que el otro sea idéntico a ti, sino que atestigua silenciosamente su caminar terrenal.",
+                        q: "\"El amor verdadero, incluso en la amistad, no quiere poseer ni juzgar; simplemente atestigua la divinidad del otro en silencio.\""
+                    },
+                    4: { // Karmica
+                        t: "Reconoce de inmediato cuando se activa tu 'cuerpo-dolor' en presencia de esta persona. Esta intensidad abrumadora, la fricción o la confusión emocional no es un castigo; es la campanada del Universo llamándote a despertar del sueño del ego. No alimentes el drama en tu cabeza con historias de victimismo o venganza. Acepta radicalmente lo que esta conexión vino a destruir dentro de ti para que puedas renacer libre.",
+                        q: "\"Cualquier cosa que aceptes plenamente te llevará a la paz, incluso la intensidad de un vínculo que quema las falsas ilusiones de tu ego.\""
+                    }
+                };
+                const tolleData = motorTolle[typeLink] || motorTolle[4];
+
+                
+                // --- INYECCIÓN EN EL DOM ---
+                
+                document.getElementById('res-par-saludo').innerText = `La fusión de ${nA} y ${nB}`;
+                document.getElementById('res-par-resonancia').innerText = resonance + "%";
+                document.getElementById('res-par-tipo').innerText = veredicto;
+                document.getElementById('res-par-tipo-desc').innerText = veredictoDesc;
+
+                document.getElementById('res-par-num').innerText = numPareja;
+                document.getElementById('res-par-num-desc').innerText = numParejaDesc[numPareja] || numParejaDesc[1];
+
+                document.getElementById('res-par-signos').innerText = `${aChinos[animalA]} y ${aChinos[animalB]}`;
+                document.getElementById('res-par-chino-desc').innerText = txtAnimal;
+                document.getElementById('res-par-elementos').innerText = `${namesEle[eA]} y ${namesEle[eB]}`;
+                document.getElementById('res-par-ele-desc').innerText = txtEle;
+
+                document.getElementById('res-par-kybalion').innerText = pKyb[(camA+camB)%4];
+                document.getElementById('res-par-ancestral').innerText = pAnc[(destA+destB)%3];
+
+                // Pacto Karmico
+                document.getElementById('res-par-vidas-diag').innerText = diagVidas[sumVidas];
+                document.getElementById('res-par-vidas-desc').innerText = diagVidasDesc[sumVidas];
+                document.getElementById('res-par-vidas-promesa').innerHTML = promesaVidas[(destA + yearA + yearB) % 3];
+
+                // Inyección Dinámica: Sombras
+                document.getElementById('res-par-sombras').innerHTML = `
+                    <p><strong class="text-[#601A24]">${numSombraData.s}:</strong> ${numSombraData.d}</p>
+                    <p class="mt-4 text-[#996515] font-bold">Consejo de Luz para esta Sombra:</p>
+                    <p>${numSombraData.c}</p>
+                `;
+
+                // Inyección Dinámica: Tolle
+                document.getElementById('res-par-tolle-box').innerHTML = `
+                    <p class="quote-sapphire font-bold">${tolleData.q}</p>
+                    <p>${tolleData.t}</p>
+                `;
+
+                // Mostrar resultados
+                document.getElementById('hero-section-par').style.display = 'none';
+                const contResultados = document.getElementById('resultados-sinastria');
+                contResultados.classList.remove('hidden-view');
+                contResultados.scrollIntoView({ behavior: 'smooth' });
+
+            } catch (err) {
+                console.error("Error procesando Sinastria Ancestral:", err);
+                alert("Ocurrió un error en el cálculo. Revisa que los datos estén completos e intenta nuevamente.");
+            }
+        });
+
+        // --- REGISTRO DEL SERVICE WORKER (PWA) ---
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registrado con éxito con el scope:', registration.scope);
+                    })
+                    .catch(err => {
+                        console.log('Fallo al registrar el ServiceWorker:', err);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
