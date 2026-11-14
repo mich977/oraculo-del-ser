@@ -1,50 +1,118 @@
-const CACHE_NAME = 'oraculo-cache-v3';
-const urlsToCache = [
+/**
+ * Service Worker — Oráculo Ciber-Filosófico PWA
+ * Estrategia:
+ *  - App Shell (recursos locales): Cache-First con actualización en segundo plano (Stale-While-Revalidate)
+ *  - Fuentes y CDN externos: Cache-First con fallback a red
+ *  - API de Google Gemini: Network-Only (nunca cachear respuestas generativas en SW)
+ */
+
+const CACHE_VERSION = 'oraculo-cf-v1.0.13';
+const RUNTIME_CACHE = 'oraculo-cf-runtime-v1.0.13';
+
+const APP_SHELL_ASSETS = [
   './',
   './index.html',
-  './manifest.json'
+  './manifest.json',
+  './data/sabiduria.js',
+  './data/sabiduria.json',
+  './js/web-pulse.js',
+  './js/nature-service.js',
+  './js/gemini-service.js',
+  './js/canvas-engine.js',
+  './js/qr-generator.js',
+  './js/app.js',
+  './icons/icon.svg',
+  './icons/icon-192.png',
+  './icons/icon-512.png'
 ];
 
-// Fase de Instalación
-self.addEventListener('install', event => {
-  // Obliga al Service Worker a tomar el control sin esperar a que se cierren las pestañas
-  self.skipWaiting();
-  
+self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => {
-        return cache.addAll(urlsToCache);
-      })
+    caches.open(CACHE_VERSION).then((cache) => {
+      return cache.addAll(APP_SHELL_ASSETS);
+    }).then(() => self.skipWaiting())
   );
 });
 
-// Fase de Activación: Limpieza de Cachés Antiguas
-self.addEventListener('activate', event => {
+self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then(cacheNames => {
+    caches.keys().then((keys) => {
       return Promise.all(
-        cacheNames.map(cacheName => {
-          // Si la caché no es la actual (v3), la borramos para liberar memoria y forzar la actualización
-          if (cacheName !== CACHE_NAME) {
-            console.log('Borrando caché antigua:', cacheName);
-            return caches.delete(cacheName);
-          }
-        })
+        keys
+          .filter((key) => key !== CACHE_VERSION && key !== RUNTIME_CACHE)
+          .map((key) => caches.delete(key))
       );
-    }).then(() => {
-      // Toma el control inmediato de todos los clientes (pestañas abiertas)
-      return self.clients.claim();
-    })
+    }).then(() => self.clients.claim())
   );
 });
 
-// Interceptación de Fetch
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        // Devuelve el archivo desde caché si existe, si no, lo pide a la red
-        return response || fetch(event.request);
+self.addEventListener('fetch', (event) => {
+  const { request } = event;
+  if (request.method !== 'GET') return;
+
+  const url = new URL(request.url);
+
+  // Nunca interceptar llamadas en vivo (Google Gemini, Wikipedia/Wikimedia REST, /api/web-pulse)
+  if (
+    url.hostname.includes('generativelanguage.googleapis.com') ||
+    url.hostname.includes('wikipedia.org') ||
+    url.hostname.includes('wikimedia.org') ||
+    url.pathname.startsWith('/api/')
+  ) {
+    return;
+  }
+
+  // Navegación HTML: Network-First con fallback a cache offline
+  if (request.mode === 'navigate') {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          const clone = response.clone();
+          caches.open(CACHE_VERSION).then((cache) => cache.put('./index.html', clone));
+          return response;
+        })
+        .catch(() => caches.match('./index.html'))
+    );
+    return;
+  }
+
+  // Recursos del mismo origen: Stale-While-Revalidate
+  if (url.origin === self.location.origin) {
+    event.respondWith(
+      caches.match(request).then((cached) => {
+        const networkFetch = fetch(request)
+          .then((response) => {
+            if (response && response.status === 200) {
+              const clone = response.clone();
+              caches.open(CACHE_VERSION).then((cache) => cache.put(request, clone));
+            }
+            return response;
+          })
+          .catch(() => cached);
+
+        return cached || networkFetch;
       })
-  );
+    );
+    return;
+  }
+
+  // CDN externos (Tailwind, Google Fonts): Cache-First con fallback a red
+  if (
+    url.hostname.includes('cdn.tailwindcss.com') ||
+    url.hostname.includes('fonts.googleapis.com') ||
+    url.hostname.includes('fonts.gstatic.com')
+  ) {
+    event.respondWith(
+      caches.match(request).then((cached) => {
+        if (cached) return cached;
+        return fetch(request).then((response) => {
+          if (response && (response.status === 200 || response.type === 'opaque')) {
+            const clone = response.clone();
+            caches.open(RUNTIME_CACHE).then((cache) => cache.put(request, clone));
+          }
+          return response;
+        });
+      })
+    );
+  }
 });

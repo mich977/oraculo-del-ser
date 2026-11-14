@@ -1,0 +1,537 @@
+/**
+ * Base de conocimiento del Oráculo Ciber-Filosófico.
+ * Expuesta como global window.SABIDURIA_DATA para compatibilidad total con file:// y HTTP/HTTPS.
+ */
+window.SABIDURIA_DATA = {
+  "meta": {
+    "version": "1.0.0",
+    "nombre": "Códice del Oráculo Ciber-Filosófico",
+    "descripcion": "Base de conocimiento ancestral que cruza Hermetismo (Kybalion), Estoicismo, Numerología, Astrología e Historia."
+  },
+  "kybalion": {
+    "nombre": "Kybalion y Hermetismo",
+    "descripcion": "Las 7 Leyes Universales de Hermes Trismegisto para comprender y transmutar la realidad mental y material.",
+    "leyes": [
+      {
+        "id": "mentalismo",
+        "numero": 1,
+        "nombre": "Principio de Mentalismo",
+        "axioma": "El Todo es Mente; el universo es mental.",
+        "principio": "Toda manifestación externa nace primero como pensamiento, atención o arquitectura mental. Quien gobierna su mente diseña su experiencia.",
+        "aplicacion_practica": "Observa qué narrativa sostienes en silencio antes de actuar: cambiar el estado mental altera la lectura completa de la crisis.",
+        "arquetipo_visual": "mente cósmica, geometría sagrada neuronal"
+      },
+      {
+        "id": "correspondencia",
+        "numero": 2,
+        "nombre": "Principio de Correspondencia",
+        "axioma": "Como es arriba, es abajo; como es abajo, es arriba.",
+        "principio": "Existen patrones fractales entre el plano espiritual, el mental y el físico. El orden o caos interno se refleja en tus hábitos y entorno.",
+        "aplicacion_practica": "Si tu mundo exterior parece fragmentado, comienza ordenando tu microcosmos inmediato: tu respiración, tu mesa, tu palabra.",
+        "arquetipo_visual": "espejo fractal, esfera armilar y circuitos"
+      },
+      {
+        "id": "vibracion",
+        "numero": 3,
+        "nombre": "Principio de Vibración",
+        "axioma": "Nada está inmóvil; todo se mueve; todo vibra.",
+        "principio": "La materia, la emoción y el pensamiento solo difieren en su tasa vibratoria. El estancamiento es una ilusión de baja frecuencia.",
+        "aplicacion_practica": "Cuando te atrape la apatía o la ansiedad, eleva deliberadamente tu frecuencia mediante movimiento físico, silencio consciente o creación.",
+        "arquetipo_visual": "ondas luminosas, espectro de frecuencias"
+      },
+      {
+        "id": "polaridad",
+        "numero": 4,
+        "nombre": "Principio de Polaridad",
+        "axioma": "Todo es doble, todo tiene dos polos; los opuestos son idénticos en naturaleza, pero diferentes en grado.",
+        "principio": "Miedo y coraje, odio y amor, duda y certeza pertenecen a la misma escala. La alquimia mental consiste en deslizar el punto de enfoque.",
+        "aplicacion_practica": "No luches frontalmente contra una emoción densa; transmútala elevando su grado hacia el polo opuesto de la misma energía.",
+        "arquetipo_visual": "balanza cuántica, eclipse dual"
+      },
+      {
+        "id": "ritmo",
+        "numero": 5,
+        "nombre": "Principio del Ritmo",
+        "axioma": "Todo fluye y refluye; todo tiene sus períodos de avance y retroceso; la medida del movimiento hacia la derecha es la misma que hacia la izquierda.",
+        "principio": "Las mareas emocionales, económicas y creativas oscilan como un péndulo. La maestría hermética radica en neutralizar el arrastre emocional del retroceso.",
+        "aplicacion_practica": "En tiempos de auge, cultiva humildad y reserva; en tiempos de caída, recuerda que el péndulo ya prepara su retorno.",
+        "arquetipo_visual": "péndulo estelar, mareas gravitacionales"
+      },
+      {
+        "id": "causa_efecto",
+        "numero": 6,
+        "nombre": "Principio de Causa y Efecto",
+        "axioma": "Toda causa tiene su efecto; todo efecto tiene su causa; la casualidad es solo un nombre para una ley no reconocida.",
+        "principio": "Nada ocurre por azar puro. Dejas de ser víctima de los efectos en el instante en que te conviertes en un causante consciente.",
+        "aplicacion_practica": "Audita tus decisiones cotidianas invisibles: son las semillas silenciosas de tu realidad dentro de noventa días.",
+        "arquetipo_visual": "engranajes celestes, efecto dominó luminoso"
+      },
+      {
+        "id": "genero",
+        "numero": 7,
+        "nombre": "Principio de Género",
+        "axioma": "El género está en todo; todo tiene sus principios masculino y femenino; el género se manifiesta en todos los planos.",
+        "principio": "Toda creación exige la unión de la voluntad proyectiva (dirección, acción, estructura) y la matriz receptiva (intuición, incubación, síntesis).",
+        "aplicacion_practica": "Equilibra tu empuje ejecutivo con pausas de escucha profunda; la acción sin incubación se agota, y la idea sin ejecución se evapora.",
+        "arquetipo_visual": "alquimia solar y lunar entrelazada"
+      }
+    ]
+  },
+  "estoicismo": {
+    "nombre": "Estoicismo",
+    "descripcion": "Filosofía práctica de la fortaleza interior, la dicotomía del control, la serenidad y la virtud cívica.",
+    "ensenanzas": [
+      {
+        "id": "marco_control",
+        "autor": "Marco Aurelio",
+        "obra": "Meditaciones",
+        "pilar": "control",
+        "maxima": "Tienes poder sobre tu mente, no sobre los acontecimientos. Date cuenta de esto y encontrarás la fuerza.",
+        "ensenanza": "El sufrimiento nace de intentar gobernar el clima externo en lugar de comandar la ciudadela interior.",
+        "aplicacion_practica": "Separa de inmediato lo que depende de tu juicio y acción de todo lo demás; invierte el 100% de tu energía solo en lo primero."
+      },
+      {
+        "id": "marco_obstaculo",
+        "autor": "Marco Aurelio",
+        "obra": "Meditaciones V, 20",
+        "pilar": "resiliencia",
+        "maxima": "El impedimento a la acción hace avanzar la acción. Lo que se interpone en el camino se convierte en el camino.",
+        "ensenanza": "Como el fuego que consume cuanto cae en él para arder con más fuerza, el espíritu entrenado convierte cada tropiezo en combustible.",
+        "aplicacion_practica": "Ante un bloqueo inesperado, pregúntate qué virtud específica (paciencia, ingenio, templanza) te exige practicar ahora."
+      },
+      {
+        "id": "marco_ciudadela",
+        "autor": "Marco Aurelio",
+        "obra": "Meditaciones VIII, 48",
+        "pilar": "aceptacion",
+        "maxima": "La mente libre de pasiones es una ciudadela inexpugnable; ningún refugio más seguro posee el ser humano.",
+        "ensenanza": "El ruido del mundo solo te hiere si le abres la puerta mediante el asentimiento de tu propio juicio.",
+        "aplicacion_practica": "Retírate brevemente a tu silencio interior antes de responder a una provocación o urgencia ajena."
+      },
+      {
+        "id": "marco_virtud",
+        "autor": "Marco Aurelio",
+        "obra": "Meditaciones IV, 24",
+        "pilar": "virtud",
+        "maxima": "No pierdas más tiempo discutiendo cómo debe ser un buen hombre. Sé uno.",
+        "ensenanza": "La filosofía que no se traduce en carácter, justicia y sobriedad cotidiana es solo vanidad intelectual.",
+        "aplicacion_practica": "Sustituye una queja o debate estéril del día por una acción silenciosa de integridad."
+      },
+      {
+        "id": "seneca_imaginacion",
+        "autor": "Séneca",
+        "obra": "Cartas a Lucilio XIII",
+        "pilar": "control",
+        "maxima": "Sufrimos más a menudo en la imaginación que en la realidad.",
+        "ensenanza": "La ansiedad anticipa catástrofes que rara vez ocurren y multiplica el dolor de las que sí llegan.",
+        "aplicacion_practica": "Verifica los hechos desnudos del presente y despoja al miedo de las historias futuras que aún no existen."
+      },
+      {
+        "id": "seneca_tiempo",
+        "autor": "Séneca",
+        "obra": "Sobre la brevedad de la vida",
+        "pilar": "virtud",
+        "maxima": "No disponemos de poco tiempo, sino que perdemos mucho.",
+        "ensenanza": "La vida es suficientemente larga para grandes obras si no la dispersamos en distracciones y aprobación ajena.",
+        "aplicacion_practica": "Protege tus horas de atención profunda como si defendieras tu patrimonio más sagrado."
+      },
+      {
+        "id": "seneca_adversidad",
+        "autor": "Séneca",
+        "obra": "Sobre la providencia",
+        "pilar": "resiliencia",
+        "maxima": "Ningún árbol se vuelve firme y robusto a menos que un viento constante sople contra él.",
+        "ensenanza": "La comodidad prolongada debilita las raíces del carácter; la dificultad calibrada revela tu verdadera talla.",
+        "aplicacion_practica": "Agradece la fricción del entrenamiento difícil: es lo que forja estabilidad cuando llega la tormenta real."
+      },
+      {
+        "id": "seneca_aceptacion",
+        "autor": "Séneca",
+        "obra": "Cartas a Lucilio CVII",
+        "pilar": "aceptacion",
+        "maxima": "El destino guía al que lo acepta y arrastra al que se resiste.",
+        "ensenanza": "Amor Fati no es resignación pasiva, sino cooperación lúcida con los hechos inevitables para dirigir mejor el próximo paso.",
+        "aplicacion_practica": "Deja de pelear con lo que ya sucedió; acéptalo como el tablero real sobre el que ahora te toca jugar."
+      },
+      {
+        "id": "epicteto_juicio",
+        "autor": "Epicteto",
+        "obra": "Enquiridión 5",
+        "pilar": "control",
+        "maxima": "No son las cosas las que perturban a los hombres, sino las opiniones que tienen sobre las cosas.",
+        "ensenanza": "Entre el estímulo y la respuesta existe una brecha donde habita tu interpretación. Ahí reside tu libertad.",
+        "aplicacion_practica": "Reformula la etiqueta mental que pusiste a un contratiempo: llámalo dato o entrenamiento en lugar de tragedia."
+      },
+      {
+        "id": "epicteto_dicotomia",
+        "autor": "Epicteto",
+        "obra": "Enquiridión 1",
+        "pilar": "aceptacion",
+        "maxima": "Algunas cosas están bajo nuestro control y otras no; la felicidad comienza cuando dejamos de confundirlas.",
+        "ensenanza": "Quien desea lo que depende de otros entrega su soberanía emocional al capricho del azar.",
+        "aplicacion_practica": "Mide tu éxito por la excelencia de tu esfuerzo y rectitud, no por el aplauso ni el resultado externo."
+      },
+      {
+        "id": "epicteto_disciplina",
+        "autor": "Epicteto",
+        "obra": "Disertaciones",
+        "pilar": "resiliencia",
+        "maxima": "¿Cuánto tiempo vas a esperar antes de exigirte lo mejor a ti mismo?",
+        "ensenanza": "Postergar la propia grandeza esperando condiciones ideales es una forma elegante de rendición.",
+        "aplicacion_practica": "Aplica tus principios hoy mismo en el detalle más pequeño, sin esperar el lunes ni la calma perfecta."
+      },
+      {
+        "id": "epicteto_silencio",
+        "autor": "Epicteto",
+        "obra": "Fragmentos",
+        "pilar": "virtud",
+        "maxima": "Guarda silencio la mayor parte del tiempo, o di solo lo necesario y con pocas palabras.",
+        "ensenanza": "La dispersión verbal diluye la energía de la intención. El carácter habla con actos sostenidos.",
+        "aplicacion_practica": "Antes de anunciar tus planes o defender tu ego, demuestra tu dirección en silencio."
+      }
+    ]
+  },
+  "numerologia": {
+    "nombre": "Numerología Pitagórica y Vibracional",
+    "descripcion": "Arquetipos numéricos del 1 al 9 y números maestros 11, 22 y 33 que revelan la frecuencia simbólica del día.",
+    "numeros": {
+      "1": {
+        "numero": 1,
+        "titulo": "El Arquitecto / El Iniciador",
+        "esencia": "Voluntad pura, liderazgo, unidad e impulso original.",
+        "vibracion": "Frecuencia de siembra y decisión soberana. Ideal para abrir rutas sin pedir permiso.",
+        "luz": "Iniciativa, coraje, claridad de propósito, independencia.",
+        "sombra": "Aislamiento, impaciencia, orgullo inflexible.",
+        "consejo": "Da el primer paso concreto hoy; el universo responde al movimiento iniciado."
+      },
+      "2": {
+        "numero": 2,
+        "titulo": "El Diplomático / El Espejo",
+        "esencia": "Dualidad, intuición, cooperación y equilibrio receptivo.",
+        "vibracion": "Frecuencia de escucha sutil, alianzas conscientes y paciencia estratégica.",
+        "luz": "Empatía, tacto, sensibilidad intuitiva, armonización.",
+        "sombra": "Indecisión, dependencia emocional, silencio por temor.",
+        "consejo": "Escucha lo que no se dice en voz alta y busca la síntesis entre opuestos."
+      },
+      "3": {
+        "numero": 3,
+        "titulo": "El Verbo / El Creador",
+        "esencia": "Expresión, síntesis trinitaria, arte y expansión mental.",
+        "vibracion": "Frecuencia de comunicación magnética, creatividad y alegría lúcida.",
+        "luz": "Elocuencia, ingenio, inspiración, carisma.",
+        "sombra": "Dispersión, superficialidad, exceso de ruido.",
+        "consejo": "Da forma visible a una idea que llevas tiempo guardando; tu palabra hoy construye puentes."
+      },
+      "4": {
+        "numero": 4,
+        "titulo": "El Constructor / La Estructura",
+        "esencia": "Orden, disciplina, cimientos y manifestación tangible.",
+        "vibracion": "Frecuencia de constancia, método y arquitectura duradera.",
+        "luz": "Rigor, fiabilidad, paciencia constructiva, lealtad.",
+        "sombra": "Rigidez mental, terquedad, exceso de control.",
+        "consejo": "Convierte tu visión en sistema: los hábitos pequeños de hoy sostendrán tu edificio mañana."
+      },
+      "5": {
+        "numero": 5,
+        "titulo": "El Alquimista del Cambio / El Viajero",
+        "esencia": "Libertad, movimiento, adaptabilidad y experiencia directa.",
+        "vibracion": "Frecuencia de ruptura creativa, versatilidad y expansión de límites.",
+        "luz": "Audacia, curiosidad, agilidad mental, magnetismo.",
+        "sombra": "Inconstancia, impulsividad, huida del compromiso.",
+        "consejo": "Abraza lo imprevisto como un portal de evolución; cambia de ruta si el mapa quedó viejo."
+      },
+      "6": {
+        "numero": 6,
+        "titulo": "El Guardián / La Armonía",
+        "esencia": "Responsabilidad, servicio noble, belleza y cohesión.",
+        "vibracion": "Frecuencia de cuidado consciente, equilibrio estético y deber asumido con amor.",
+        "luz": "Protección, justicia afectiva, hospitalidad, sentido ético.",
+        "sombra": "Sacrificio excesivo, perfeccionismo, intromisión.",
+        "consejo": "Cuida tu entorno sin olvidar tu propio centro; la armonía verdadera empieza adentro."
+      },
+      "7": {
+        "numero": 7,
+        "titulo": "El Sabio / El Buscador",
+        "esencia": "Contemplación, análisis profundo, misterio y verdad interior.",
+        "vibracion": "Frecuencia de retiro lúcido, estudio hermético y discernimiento.",
+        "luz": "Sabiduría, penetración mental, intuición afinada, sobriedad.",
+        "sombra": "Cinismo, desconexión afectiva, exceso de análisis paralizante.",
+        "consejo": "Haz silencio frente al ruido externo; la respuesta que buscas ya espera en tu quietud."
+      },
+      "8": {
+        "numero": 8,
+        "titulo": "El Soberano / El Infinito",
+        "esencia": "Poder material y espiritual, causa y efecto, maestría ejecutiva.",
+        "vibracion": "Frecuencia de autoridad serena, abundancia responsable y cosecha kármica.",
+        "luz": "Liderazgo ético, resiliencia, visión estratégica, abundancia.",
+        "sombra": "Ambición ciega, dureza, apego al estatus.",
+        "consejo": "Ejerce tu poder con templanza: cuanto mayor es tu alcance, más limpia debe ser tu intención."
+      },
+      "9": {
+        "numero": 9,
+        "titulo": "El Humanista / El Cierre de Ciclo",
+        "esencia": "Compasión universal, síntesis de experiencia y trascendencia.",
+        "vibracion": "Frecuencia de culminación, perdón liberador y entrega de sabiduría.",
+        "luz": "Generosidad, visión global, desapego sabio, nobleza.",
+        "sombra": "Melancolía, resistencia a soltar, agotamiento emocional.",
+        "consejo": "Suelta con gratitud lo que ya cumplió su ciclo para abrir espacio a una nueva octava."
+      },
+      "11": {
+        "numero": 11,
+        "titulo": "Número Maestro 11 · El Iluminado / El Canal",
+        "esencia": "Intuición elevada, visión profética y puente entre planos.",
+        "vibracion": "Frecuencia de alta sensibilidad perceptiva, inspiración repentina y liderazgo espiritual.",
+        "luz": "Clarividencia mental, inspiración transformadora, presencia magnética.",
+        "sombra": "Sobrecarga nerviosa, duda existencial, parálisis por intensidad.",
+        "consejo": "Ancla tus destellos de visión en acciones simples; la luz necesita un cable a tierra."
+      },
+      "22": {
+        "numero": 22,
+        "titulo": "Número Maestro 22 · El Maestro Constructor",
+        "esencia": "Materialización de ideales elevados en obras concretas para muchos.",
+        "vibracion": "Frecuencia de arquitectura a gran escala, pragmatismo visionario y legado.",
+        "luz": "Capacidad monumental de ejecución, disciplina serena, impacto colectivo.",
+        "sombra": "Presión abrumadora, miedo al propio potencial, rigidez extrema.",
+        "consejo": "Piensa en catedrales, pero coloca hoy un ladrillo perfecto a la vez."
+      },
+      "33": {
+        "numero": 33,
+        "titulo": "Número Maestro 33 · El Maestro Compasivo",
+        "esencia": "Servicio altruista elevado, palabra sanadora y amor lúcido.",
+        "vibracion": "Frecuencia de enseñanza desde el ejemplo, cohesión humana y transmutación del dolor.",
+        "luz": "Sabiduría compasiva, guía serena, creatividad al servicio del bien común.",
+        "sombra": "Cargar culpas ajenas, agotamiento del sanador.",
+        "consejo": "Enseña con tu calma más que con tus discursos; tu coherencia eleva a quienes te rodean."
+      }
+    }
+  },
+  "astrologia_historia": {
+    "nombre": "Astrología, Arquetipos e Historia",
+    "elementos": [
+      {
+        "nombre": "Fuego",
+        "cualidad": "Impulso, transmutación, coraje y chispa creadora",
+        "sabiduria": "El fuego ilumina y forja, pero necesita dirección para no consumir su propio hogar."
+      },
+      {
+        "nombre": "Tierra",
+        "cualidad": "Forma, paciencia, resistencia y realidad tangible",
+        "sabiduria": "Lo que crece lento y echa raíces profundas resiste cualquier vendaval."
+      },
+      {
+        "nombre": "Aire",
+        "cualidad": "Intelecto, perspectiva, vínculo y circulación de ideas",
+        "sabiduria": "Elevar la mirada cambia la geometría del laberinto que desde abajo parecía cerrado."
+      },
+      {
+        "nombre": "Agua",
+        "cualidad": "Profundidad emocional, memoria, intuición y fluidez",
+        "sabiduria": "El agua vence a la roca no por fuerza bruta, sino por constancia adaptable."
+      }
+    ],
+    "zodiaco_occidental": [
+      {
+        "nombre": "Aries",
+        "elemento": "Fuego",
+        "planeta": "Marte",
+        "arquetipo": "El Pionero",
+        "sabiduria": "El valor no es ausencia de duda, sino avanzar pese a ella."
+      },
+      {
+        "nombre": "Tauro",
+        "elemento": "Tierra",
+        "planeta": "Venus",
+        "arquetipo": "El Guardián de la Forma",
+        "sabiduria": "La verdadera riqueza es la calma que nadie puede arrebatarte."
+      },
+      {
+        "nombre": "Géminis",
+        "elemento": "Aire",
+        "planeta": "Mercurio",
+        "arquetipo": "El Mensajero",
+        "sabiduria": "Quien hace mejores preguntas habita un universo más amplio."
+      },
+      {
+        "nombre": "Cáncer",
+        "elemento": "Agua",
+        "planeta": "Luna",
+        "arquetipo": "El Protector del Refugio",
+        "sabiduria": "La sensibilidad bien enraizada es una armadura invisible."
+      },
+      {
+        "nombre": "Leo",
+        "elemento": "Fuego",
+        "planeta": "Sol",
+        "arquetipo": "El Corazón Soberano",
+        "sabiduria": "Brillar con autenticidad da permiso a otros para encender su propia luz."
+      },
+      {
+        "nombre": "Virgo",
+        "elemento": "Tierra",
+        "planeta": "Mercurio",
+        "arquetipo": "El Alquimista del Detalle",
+        "sabiduria": "La excelencia es un acto silencioso de respeto por lo que haces."
+      },
+      {
+        "nombre": "Libra",
+        "elemento": "Aire",
+        "planeta": "Venus",
+        "arquetipo": "El Equilibrador",
+        "sabiduria": "La paz real nace cuando el criterio interno pesa más que el ruido ajeno."
+      },
+      {
+        "nombre": "Escorpio",
+        "elemento": "Agua",
+        "planeta": "Plutón",
+        "arquetipo": "El Fénix Transmutador",
+        "sabiduria": "Todo final profundo es la incubadora de una fuerza irreconocible."
+      },
+      {
+        "nombre": "Sagitario",
+        "elemento": "Fuego",
+        "planeta": "Júpiter",
+        "arquetipo": "El Filósofo Errante",
+        "sabiduria": "El horizonte siempre recompensa a quien se atreve a cruzar su certeza."
+      },
+      {
+        "nombre": "Capricornio",
+        "elemento": "Tierra",
+        "planeta": "Saturno",
+        "arquetipo": "El Escalador del Tiempo",
+        "sabiduria": "La disciplina transforma el tiempo de enemigo en aliado invencible."
+      },
+      {
+        "nombre": "Acuario",
+        "elemento": "Aire",
+        "planeta": "Urano",
+        "arquetipo": "El Visionario Ciber-Humanista",
+        "sabiduria": "El futuro pertenece a quienes piensan más allá de la tribu sin olvidar lo humano."
+      },
+      {
+        "nombre": "Piscis",
+        "elemento": "Agua",
+        "planeta": "Neptuno",
+        "arquetipo": "El Místico Oceánico",
+        "sabiduria": "En el silencio de la empatía todo límite ilusorio se disuelve."
+      }
+    ],
+    "zodiaco_chino": [
+      {
+        "nombre": "Rata",
+        "elemento_fijo": "Agua",
+        "arquetipo": "El Estratega Ágil",
+        "virtud": "Ingenio para hallar salidas donde otros ven muros."
+      },
+      {
+        "nombre": "Buey",
+        "elemento_fijo": "Tierra",
+        "arquetipo": "La Fuerza Silenciosa",
+        "virtud": "Constancia inquebrantable paso a paso."
+      },
+      {
+        "nombre": "Tigre",
+        "elemento_fijo": "Madera",
+        "arquetipo": "El Espíritu Indómito",
+        "virtud": "Coraje magnético para proteger y abrir camino."
+      },
+      {
+        "nombre": "Conejo",
+        "elemento_fijo": "Madera",
+        "arquetipo": "El Diplomático Lúcido",
+        "virtud": "Serenidad estratégica que vence sin estridencia."
+      },
+      {
+        "nombre": "Dragón",
+        "elemento_fijo": "Tierra",
+        "arquetipo": "El Emblema Celeste",
+        "virtud": "Visión audaz unida a magnanimidad."
+      },
+      {
+        "nombre": "Serpiente",
+        "elemento_fijo": "Fuego",
+        "arquetipo": "La Sabiduría Oculta",
+        "virtud": "Intuición fría, renovación y lectura profunda."
+      },
+      {
+        "nombre": "Caballo",
+        "elemento_fijo": "Fuego",
+        "arquetipo": "El Impulso Libre",
+        "virtud": "Energía vital que no teme la distancia."
+      },
+      {
+        "nombre": "Cabra",
+        "elemento_fijo": "Tierra",
+        "arquetipo": "El Artesano Armónico",
+        "virtud": "Sensibilidad creativa que suaviza tiempos duros."
+      },
+      {
+        "nombre": "Mono",
+        "elemento_fijo": "Metal",
+        "arquetipo": "El Alquimista Ingenioso",
+        "virtud": "Agilidad mental para convertir crisis en juego maestro."
+      },
+      {
+        "nombre": "Gallo",
+        "elemento_fijo": "Metal",
+        "arquetipo": "El Vigía del Alba",
+        "virtud": "Precisión, franqueza y disciplina puntual."
+      },
+      {
+        "nombre": "Perro",
+        "elemento_fijo": "Tierra",
+        "arquetipo": "El Centinela Leal",
+        "virtud": "Integridad moral en los momentos de prueba."
+      },
+      {
+        "nombre": "Cerdo",
+        "elemento_fijo": "Agua",
+        "arquetipo": "La Abundancia Noble",
+        "virtud": "Generosidad genuina y disfrute consciente."
+      }
+    ],
+    "lecciones_historicas": [
+      {
+        "personaje_o_evento": "Marco Aurelio en la campaña del Danubio",
+        "epoca": "170–180 d.C. (Imperio Romano)",
+        "leccion": "Mientras gobernaba un imperio asediado por la peste y la guerra en tiendas heladas de campaña, escribía recordatorios diarios de humildad, templanza y deber.",
+        "aplicacion": "Tu entorno no necesita ser sereno para que tu mente lo sea."
+      },
+      {
+        "personaje_o_evento": "Epicteto de Hierápolis",
+        "epoca": "Siglo I–II d.C.",
+        "leccion": "Nacido en esclavitud y lisiado físicamente, fundó una de las escuelas de libertad interior más influyentes de la historia humana.",
+        "aplicacion": "Ninguna cadena externa alcanza la soberanía de un juicio entrenado."
+      },
+      {
+        "personaje_o_evento": "Hipatia de Alejandría",
+        "epoca": "Siglo IV–V d.C.",
+        "leccion": "Astrónoma, matemática y filósofa neoplatónica que defendió la razón, la geometría y el diálogo frente al fanatismo de una época convulsa.",
+        "aplicacion": "Conserva la claridad intelectual incluso cuando el entorno premia el ruido."
+      },
+      {
+        "personaje_o_evento": "El arte japonés del Kintsugi",
+        "epoca": "Siglo XV (Período Muromachi)",
+        "leccion": "Reparar cerámica fracturada con laca espolvoreada en oro convierte la cicatriz en la parte más valiosa y bella de la pieza.",
+        "aplicacion": "Tus quiebres integrados con sabiduría son tu firma de resistencia, no tu defecto."
+      },
+      {
+        "personaje_o_evento": "La expedición del Endurance (Ernest Shackleton)",
+        "epoca": "1914–1917 (Antártida)",
+        "leccion": "Atrapados durante meses en el hielo polar sin barco, la tripulación sobrevivió intacta gracias al liderazgo sereno, las rutinas y la cohesión moral.",
+        "aplicacion": "Cuando el plan original se hunde, cambia la meta de conquistar a resistir juntos con orden."
+      },
+      {
+        "personaje_o_evento": "Viktor Frankl y el sentido en la adversidad",
+        "epoca": "Siglo XX",
+        "leccion": "Aun despojado de todo, observó que al ser humano siempre le queda la última libertad: elegir su actitud frente a cualquier circunstancia.",
+        "aplicacion": "Quien posee un 'para qué' sólido soporta casi cualquier 'cómo'."
+      },
+      {
+        "personaje_o_evento": "El Faro y la Biblioteca de Alejandría",
+        "epoca": "Antigüedad Helénica",
+        "leccion": "Las ideas pierden soportes físicos, pero sobreviven cuando se transmiten de mente en mente y se reescriben en nuevos formatos.",
+        "aplicacion": "No atesores el conocimiento; tradúcelo al lenguaje de tu tiempo para que siga vivo."
+      }
+    ]
+  }
+};
