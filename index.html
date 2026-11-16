@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="es" class="dark">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Oráculo Ciber-Filosófico · Sabiduría Visual IA</title>
 
   <!-- PWA & Mobile Meta -->
-  <meta name="description" content="Generador visual y textual de contenido filosófico de alto impacto cruzando Kybalion, Estoicismo, Numerología, Astrología e Historia." />
-  <meta name="theme-color" content="#050811" />
+  <meta name="description" content="Generador visual y textual de contenido filosófico y efemérides mundiales." />
+  <meta name="theme-color" content="#CBD5E1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Oráculo CF" />
   <link rel="manifest" href="./manifest.json" />
   <link rel="icon" type="image/svg+xml" href="./icons/icon.svg" />
@@ -44,55 +44,56 @@
 
   <style>
     body {
-      background-color: #050811;
+      background-color: #cbd5e1;
       background-image:
-        radial-gradient(circle at 18% 10%, rgba(0, 240, 255, 0.08), transparent 38%),
-        radial-gradient(circle at 85% 82%, rgba(255, 77, 45, 0.07), transparent 40%);
+        radial-gradient(circle at 15% 12%, rgba(14, 165, 233, 0.16), transparent 36%),
+        radial-gradient(circle at 86% 82%, rgba(249, 115, 22, 0.12), transparent 38%),
+        radial-gradient(circle at 50% 45%, rgba(16, 185, 129, 0.08), transparent 42%);
     }
     .cyber-grid {
       background-size: 32px 32px;
       background-image:
-        linear-gradient(to right, rgba(0, 240, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+        linear-gradient(to right, rgba(51, 65, 85, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(51, 65, 85, 0.05) 1px, transparent 1px);
     }
   </style>
 </head>
 
-<body class="min-h-screen text-slate-100 antialiased cyber-grid selection:bg-cyan-500/30 selection:text-cyan-200">
+<body class="min-h-screen text-slate-900 antialiased cyber-grid selection:bg-sky-500/25 selection:text-sky-900">
 
   <!-- Barra Superior -->
-  <header class="sticky top-0 z-30 border-b border-slate-800/80 bg-[#050811]/85 backdrop-blur-xl">
+  <header class="sticky top-0 z-30 border-b border-slate-300/90 bg-slate-100/90 backdrop-blur-xl shadow-sm">
     <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
       <div class="flex items-center gap-3 min-w-0">
-        <img src="./icons/icon.svg" alt="Oráculo Ciber-Filosófico" class="h-9 w-9 rounded-xl border border-cyan-400/30 shadow-[0_0_16px_rgba(0,240,255,0.2)] shrink-0" />
+        <img src="./icons/icon.svg" alt="Oráculo Ciber-Filosófico" class="h-9 w-9 rounded-xl border border-sky-400/50 bg-slate-800 shadow-md shrink-0" />
         <div class="min-w-0">
-          <h1 class="truncate text-sm sm:text-base font-bold tracking-tight text-white">
-            Oráculo <span class="text-cyan-400">Ciber-Filosófico</span>
+          <h1 class="truncate text-sm sm:text-base font-bold tracking-tight text-slate-900">
+            Oráculo <span class="text-sky-600">Ciber-Filosófico</span>
           </h1>
-          <p id="daily-numerology-pill" class="truncate text-[11px] font-mono text-slate-400">
+          <p id="daily-numerology-pill" class="truncate text-[11px] font-mono text-slate-600">
             Calculando vibración diaria...
           </p>
         </div>
       </div>
 
       <div class="flex items-center gap-2 shrink-0">
-        <span id="api-status-pill" class="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-slate-700 bg-slate-900 px-2.5 py-1 text-[11px] font-mono text-slate-300">
+        <span id="api-status-pill" class="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-slate-300 bg-white px-2.5 py-1 text-[11px] font-mono text-slate-700 shadow-sm">
           Verificando API...
         </span>
 
         <button id="btn-install-pwa" type="button"
-          class="hidden items-center gap-1.5 rounded-xl border border-cyan-400/40 bg-cyan-500/15 px-3 py-1.5 text-xs font-semibold text-cyan-300 hover:bg-cyan-500/25 transition-colors">
+          class="hidden items-center gap-1.5 rounded-xl border border-sky-500 bg-sky-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-sky-500 shadow-sm transition-colors">
           📲 Instalar
         </button>
 
         <button id="btn-open-qr" type="button" aria-label="Código QR para instalar en móvil"
-          class="inline-flex items-center gap-1.5 rounded-xl border border-slate-700/90 bg-slate-900/90 px-3 py-2 text-xs font-medium text-slate-200 hover:border-cyan-400/60 hover:text-cyan-300 transition-all">
+          class="inline-flex items-center gap-1.5 rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-700 hover:border-sky-500 hover:text-sky-700 shadow-sm transition-all">
           <span>📱</span>
           <span class="hidden sm:inline">QR Móvil</span>
         </button>
 
         <button id="btn-open-settings" type="button" aria-label="Configuración"
-          class="inline-flex items-center gap-1.5 rounded-xl border border-slate-700/90 bg-slate-900/90 px-3 py-2 text-xs font-medium text-slate-200 hover:border-cyan-400/60 hover:text-cyan-300 transition-all">
+          class="inline-flex items-center gap-1.5 rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-semibold text-slate-700 hover:border-sky-500 hover:text-sky-700 shadow-sm transition-all">
           <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
             <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
             <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -110,61 +111,92 @@
     <section class="flex flex-col gap-5 lg:col-span-5 lg:col-start-1">
 
       <!-- Panel de Parámetros del Oráculo -->
-      <div class="rounded-2xl border border-slate-800/90 bg-slate-950/75 p-4 sm:p-5 shadow-2xl backdrop-blur-md space-y-4">
+      <div class="rounded-2xl border border-slate-300/90 bg-slate-50/95 p-4 sm:p-5 shadow-lg backdrop-blur-md space-y-4">
 
-        <!-- Selector de Corriente Filosófica -->
+        <!-- Selector de Tipo de Publicación -->
         <div>
-          <label for="stream-select" class="block text-[11px] font-mono uppercase tracking-wider text-slate-400 mb-2">
+          <label class="block text-[11px] font-mono font-semibold uppercase tracking-wider text-slate-600 mb-2">
+            Tipo de Publicación
+          </label>
+          <div class="grid grid-cols-2 gap-2 rounded-xl bg-slate-200/80 p-1 border border-slate-300">
+            <button id="btn-mode-esperanza" type="button"
+              class="rounded-lg border px-3 py-2 text-xs font-semibold transition-all">
+              ✨ Apoyo &amp; Conciencia
+            </button>
+            <button id="btn-mode-efemeride" type="button"
+              class="rounded-lg border px-3 py-2 text-xs font-semibold transition-all">
+              📅 Efeméride Mundial
+            </button>
+          </div>
+        </div>
+
+        <!-- Selector de Corriente Filosófica (Modo Esperanza) -->
+        <div id="stream-wrapper">
+          <label for="stream-select" class="block text-[11px] font-mono font-semibold uppercase tracking-wider text-slate-600 mb-2">
             Corriente Filosófica
           </label>
           <select id="stream-select"
-            class="w-full rounded-xl border border-slate-800 bg-slate-900/95 px-3.5 py-2.5 text-sm font-medium text-slate-100 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400">
-            <option value="aleatorio">🌌 Aleatorio Cósmico (Fusión Total)</option>
-            <option value="estoicismo">🏛️ Estoicismo (Marco Aurelio · Séneca · Epicteto)</option>
-            <option value="kybalion">🔺 Kybalion &amp; Hermetismo (7 Leyes)</option>
-            <option value="numerologia">🔢 Numerología del Día</option>
-            <option value="historia">⏳ Historia &amp; Arquetipos</option>
+            class="w-full rounded-xl border border-slate-300 bg-white px-3.5 py-2.5 text-sm font-medium text-slate-800 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500/20">
+            <option value="filosofia">🦉 Filosofía (Sócrates a Eckhart Tolle)</option>
+            <option value="taoismo">☯️ Taoísmo (Laozi, Zhuangzi, Liezi, Wang Chongyang &amp; Tianshi)</option>
+            <option value="estoicismo">🏛️ Estoicismo (Zenón, Cleantes, Crisipo, Séneca, Epicteto &amp; Marco Aurelio)</option>
+            <option value="kybalion">🔺 Leyes Universales &amp; Kybalion (Hermes a Joe Dispenza)</option>
+            <option value="sabiduria_humana">🕊️ Sabiduría Humana (Parábolas de Jesús, Eclesiastés &amp; Proverbios)</option>
+          </select>
+        </div>
+
+        <!-- Selector de Enfoque (Modo Efeméride Mundial) -->
+        <div id="ephemeris-focus-wrapper" class="hidden">
+          <label for="ephemeris-focus-select" class="block text-[11px] font-mono font-semibold uppercase tracking-wider text-slate-600 mb-2">
+            Enfoque de Efeméride de Hoy
+          </label>
+          <select id="ephemeris-focus-select"
+            class="w-full rounded-xl border border-slate-300 bg-white px-3.5 py-2.5 text-sm font-medium text-slate-800 shadow-sm focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500/20">
+            <option value="mixto">🌍 Mezcla (Días Mundiales + Historia)</option>
+            <option value="mundiales">🕊️ Días Internacionales / Conciencia</option>
+            <option value="historia">🔭 Hitos Históricos, Ciencia &amp; Cultura</option>
+            <option value="chile">🇨🇱 Efemérides de Chile</option>
           </select>
         </div>
 
         <!-- Selector Rápido de Formato -->
         <div>
-          <label class="block text-[11px] font-mono uppercase tracking-wider text-slate-400 mb-2">
+          <label class="block text-[11px] font-mono font-semibold uppercase tracking-wider text-slate-600 mb-2">
             Formato de Salida HD
           </label>
           <div class="grid grid-cols-2 gap-2">
             <button type="button" data-format-btn="4:5"
-              class="rounded-xl border px-3 py-2 text-xs font-mono font-medium transition-all">
+              class="rounded-xl border px-3 py-2 text-xs font-mono font-semibold transition-all">
               4:5 Feed (1080×1350)
             </button>
             <button type="button" data-format-btn="9:16"
-              class="rounded-xl border px-3 py-2 text-xs font-mono font-medium transition-all">
+              class="rounded-xl border px-3 py-2 text-xs font-mono font-semibold transition-all">
               9:16 Reel (1080×1920)
             </button>
           </div>
         </div>
 
         <!-- Interruptor Pulso Web en Vivo -->
-        <label class="flex items-center justify-between gap-3 rounded-xl border border-slate-800/90 bg-slate-900/70 px-3.5 py-2.5 cursor-pointer hover:border-cyan-400/40 transition-colors">
+        <label class="flex items-center justify-between gap-3 rounded-xl border border-slate-300/90 bg-white px-3.5 py-2.5 cursor-pointer hover:border-sky-400 transition-colors shadow-sm">
           <div class="min-w-0">
-            <div class="text-xs font-semibold text-slate-200 flex items-center gap-1.5">
+            <div class="text-xs font-semibold text-slate-800 flex items-center gap-1.5">
               <span>🌐</span>
               <span>Pulso Web en Vivo</span>
             </div>
-            <p class="text-[11px] text-slate-400 truncate">
+            <p class="text-[11px] text-slate-500 truncate">
               Conecta Google Search, Wikipedia y noticias reales de hoy
             </p>
           </div>
           <input id="toggle-web-pulse" type="checkbox" checked
-            class="h-4 w-4 accent-cyan-400 rounded cursor-pointer shrink-0" />
+            class="h-4 w-4 accent-sky-600 rounded cursor-pointer shrink-0" />
         </label>
 
         <!-- EL BOTÓN ÚNICO -->
         <button id="btn-invoke" type="button"
-          class="group relative w-full overflow-hidden rounded-2xl bg-gradient-to-r from-cyan-500 via-sky-500 to-orange-500 p-[1.5px] shadow-[0_0_30px_rgba(0,240,255,0.22)] transition-all hover:shadow-[0_0_40px_rgba(255,77,45,0.35)] active:scale-[0.99] disabled:opacity-60 disabled:cursor-not-allowed">
-          <div class="flex items-center justify-center gap-2.5 rounded-[14.5px] bg-[#070E1D] px-6 py-4 transition-colors group-hover:bg-[#091327]">
-            <span class="text-lg">✨</span>
-            <span class="text-sm sm:text-base font-bold tracking-wide text-white uppercase">
+          class="group relative w-full overflow-hidden rounded-2xl bg-gradient-to-r from-sky-500 via-teal-500 to-orange-500 p-[2px] shadow-lg transition-all hover:shadow-xl hover:brightness-105 active:scale-[0.99] disabled:opacity-60 disabled:cursor-not-allowed">
+          <div class="flex items-center justify-center gap-2.5 rounded-[14px] bg-gradient-to-r from-sky-600 via-cyan-600 to-orange-500 px-6 py-4 transition-all">
+            <span id="btn-invoke-icon" class="text-lg">✨</span>
+            <span id="btn-invoke-label" class="text-sm sm:text-base font-bold tracking-wide text-white uppercase drop-shadow-sm">
               INVOCAR MENSAJE
             </span>
           </div>
@@ -172,9 +204,9 @@
       </div>
 
       <!-- Caption Listo para Redes Sociales -->
-      <div class="rounded-2xl border border-slate-800/90 bg-slate-950/75 p-4 sm:p-5 shadow-xl backdrop-blur-md">
+      <div class="rounded-2xl border border-slate-300/90 bg-slate-50/95 p-4 sm:p-5 shadow-lg backdrop-blur-md">
         <div class="flex items-center justify-between mb-2.5">
-          <h2 class="text-xs font-mono uppercase tracking-wider text-cyan-400">
+          <h2 class="text-xs font-mono font-semibold uppercase tracking-wider text-sky-700">
             Caption para Redes (Editable)
           </h2>
           <span id="art-source-badge" class="text-[11px] font-mono text-slate-500">
@@ -183,15 +215,7 @@
         </div>
         <textarea id="caption-preview" rows="7"
           placeholder="Aquí aparecerá el desarrollo filosófico, pregunta CTA y hashtags listos para Instagram, TikTok o Facebook..."
-          class="w-full rounded-xl border border-slate-800 bg-slate-900/80 p-3 text-xs sm:text-sm leading-relaxed text-slate-200 placeholder-slate-600 focus:border-cyan-400/70 focus:outline-none"></textarea>
-
-        <!-- Fuentes Web en Vivo utilizadas -->
-        <div id="web-sources-box" class="hidden mt-3 border-t border-slate-800/80 pt-3">
-          <p class="text-[11px] font-mono uppercase tracking-wider text-slate-400 mb-2">
-            🌐 Inspiración Web en Vivo
-          </p>
-          <div id="web-sources-list" class="flex flex-wrap gap-1.5"></div>
-        </div>
+          class="w-full rounded-xl border border-slate-300 bg-white p-3 text-xs sm:text-sm leading-relaxed text-slate-800 placeholder-slate-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500/20"></textarea>
       </div>
     </section>
 
@@ -201,15 +225,15 @@
 
         <!-- Contenedor Canvas con Aspect Ratio Dinámico -->
         <div id="canvas-preview-wrapper"
-          class="relative w-full overflow-hidden rounded-2xl border border-slate-800 bg-slate-950 shadow-[0_20px_60px_rgba(0,0,0,0.75)]"
+          class="relative w-full overflow-hidden rounded-2xl border-2 border-slate-400/70 bg-slate-700 shadow-[0_20px_50px_rgba(15,23,42,0.28)]"
           style="aspect-ratio: 4 / 5;">
           <canvas id="oracle-canvas" class="h-full w-full block object-contain"></canvas>
 
           <!-- Overlay de Carga -->
           <div id="canvas-loading"
-            class="hidden absolute inset-0 z-10 flex flex-col items-center justify-center gap-4 bg-[#050811]/85 backdrop-blur-md px-6 text-center">
-            <div class="h-12 w-12 animate-spin rounded-full border-2 border-cyan-400/20 border-t-cyan-400 shadow-[0_0_20px_rgba(0,240,255,0.4)]"></div>
-            <p id="loading-label" class="text-sm font-mono text-cyan-200 animate-pulse">
+            class="hidden absolute inset-0 z-10 flex flex-col items-center justify-center gap-4 bg-slate-800/80 backdrop-blur-md px-6 text-center">
+            <div class="h-12 w-12 animate-spin rounded-full border-4 border-white/25 border-t-amber-400 shadow-lg"></div>
+            <p id="loading-label" class="text-sm font-mono font-semibold text-white animate-pulse">
               Consultando al Oráculo...
             </p>
           </div>
@@ -218,18 +242,18 @@
         <!-- Botones de Acción Directa debajo del Canvas -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <button id="btn-download" type="button" disabled
-            class="flex items-center justify-center gap-2 rounded-xl border border-cyan-400/40 bg-cyan-500/15 px-4 py-3.5 text-sm font-semibold text-cyan-200 hover:bg-cyan-500/25 active:scale-[0.99] transition-all disabled:opacity-40 disabled:cursor-not-allowed">
+            class="flex items-center justify-center gap-2 rounded-xl border border-sky-700 bg-sky-600 px-4 py-3.5 text-sm font-bold text-white shadow-md hover:bg-sky-500 active:scale-[0.99] transition-all disabled:opacity-40 disabled:cursor-not-allowed">
             ⬇️ Descargar Imagen HD
           </button>
 
           <button id="btn-copy-caption" type="button" disabled
-            class="flex items-center justify-center gap-2 rounded-xl border border-orange-500/40 bg-orange-500/15 px-4 py-3.5 text-sm font-semibold text-orange-200 hover:bg-orange-500/25 active:scale-[0.99] transition-all disabled:opacity-40 disabled:cursor-not-allowed">
+            class="flex items-center justify-center gap-2 rounded-xl border border-orange-600 bg-orange-500 px-4 py-3.5 text-sm font-bold text-white shadow-md hover:bg-orange-400 active:scale-[0.99] transition-all disabled:opacity-40 disabled:cursor-not-allowed">
             📋 Copiar Caption
           </button>
         </div>
 
         <button id="btn-shuffle-nature" type="button" disabled
-          class="w-full flex items-center justify-center gap-2 rounded-xl border border-emerald-500/35 bg-emerald-500/10 px-4 py-2.5 text-xs sm:text-sm font-semibold text-emerald-200 hover:bg-emerald-500/20 active:scale-[0.99] transition-all disabled:opacity-40 disabled:cursor-not-allowed">
+          class="w-full flex items-center justify-center gap-2 rounded-xl border border-emerald-700 bg-emerald-600 px-4 py-2.5 text-xs sm:text-sm font-bold text-white shadow-md hover:bg-emerald-500 active:scale-[0.99] transition-all disabled:opacity-40 disabled:cursor-not-allowed">
           🏞️ Cambiar Fondo de Naturaleza Aleatorio
         </button>
 
@@ -237,13 +261,13 @@
     </section>
 
     <!-- Historial Reciente (Últimas 5 Creaciones, visible en Móvil y Escritorio) -->
-    <section class="lg:col-span-5 lg:col-start-1 rounded-2xl border border-slate-800/90 bg-slate-950/75 p-4 sm:p-5 shadow-xl backdrop-blur-md">
+    <section class="lg:col-span-5 lg:col-start-1 rounded-2xl border border-slate-300/90 bg-slate-50/95 p-4 sm:p-5 shadow-lg backdrop-blur-md">
       <div class="flex items-center justify-between mb-3">
-        <h2 class="text-xs font-mono uppercase tracking-wider text-slate-300">
+        <h2 class="text-xs font-mono font-semibold uppercase tracking-wider text-slate-700">
           Historial Reciente (Últimas 5)
         </h2>
         <button id="btn-clear-history" type="button"
-          class="hidden text-[11px] font-mono text-slate-500 hover:text-rose-400 transition-colors">
+          class="hidden text-[11px] font-mono font-semibold text-slate-500 hover:text-rose-600 transition-colors">
           Limpiar
         </button>
       </div>
@@ -256,61 +280,61 @@
 
   <!-- Modal de Configuración -->
   <div id="settings-modal"
-    class="hidden fixed inset-0 z-50 items-center justify-center bg-black/75 p-4 backdrop-blur-sm">
-    <div class="w-full max-w-md rounded-2xl border border-slate-800 bg-[#080E1C] p-5 sm:p-6 shadow-2xl space-y-5">
-      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+    class="hidden fixed inset-0 z-50 items-center justify-center bg-slate-900/55 p-4 backdrop-blur-sm">
+    <div class="w-full max-w-md rounded-2xl border border-slate-300 bg-slate-50 p-5 sm:p-6 shadow-2xl space-y-5 text-slate-900">
+      <div class="flex items-center justify-between border-b border-slate-200 pb-3">
         <div>
-          <h2 class="text-base font-bold text-white">Configuración del Oráculo</h2>
-          <p class="text-xs text-slate-400">Tus credenciales se guardan solo en tu navegador.</p>
+          <h2 class="text-base font-bold text-slate-900">Configuración del Oráculo</h2>
+          <p class="text-xs text-slate-500">Tus credenciales se guardan solo en tu navegador.</p>
         </div>
         <button id="btn-close-settings" type="button"
-          class="rounded-lg p-1.5 text-slate-400 hover:bg-slate-800 hover:text-white">
+          class="rounded-lg p-1.5 text-slate-500 hover:bg-slate-200 hover:text-slate-900">
           ✕
         </button>
       </div>
 
       <!-- API Key -->
       <div>
-        <label for="input-api-key" class="block text-xs font-mono uppercase tracking-wider text-cyan-300 mb-1.5">
+        <label for="input-api-key" class="block text-xs font-mono font-semibold uppercase tracking-wider text-sky-700 mb-1.5">
           Google Gemini API Key
         </label>
         <div class="flex gap-2">
           <input id="input-api-key" type="password" autocomplete="off"
             placeholder="AIzaSy..."
-            class="flex-1 rounded-xl border border-slate-700 bg-slate-900 px-3 py-2.5 text-sm font-mono text-white placeholder-slate-600 focus:border-cyan-400 focus:outline-none" />
+            class="flex-1 rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm font-mono text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:outline-none" />
           <button id="btn-toggle-key-vis" type="button"
-            class="rounded-xl border border-slate-700 bg-slate-800 px-3 text-xs font-mono text-slate-300 hover:text-white">
+            class="rounded-xl border border-slate-300 bg-slate-200 px-3 text-xs font-mono font-semibold text-slate-700 hover:bg-slate-300">
             Mostrar
           </button>
         </div>
         <p id="api-key-feedback" class="hidden mt-2 rounded-lg border px-2.5 py-2 text-[11px] font-mono leading-relaxed"></p>
         <p class="mt-1.5 text-[11px] text-slate-500">
-          Usa <code class="text-cyan-400">gemini-3.8-flash</code> (con autodescubrimiento de modelo activo) y arte adaptativo.
+          Usa <code class="text-sky-700 font-semibold">gemini-3.8-flash</code> (con autodescubrimiento de modelo activo) y fondos de naturaleza.
         </p>
       </div>
 
       <!-- Firma / Marca de Agua -->
       <div>
-        <label for="input-signature" class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-1.5">
+        <label for="input-signature" class="block text-xs font-mono font-semibold uppercase tracking-wider text-slate-700 mb-1.5">
           Firma / Marca de Agua Vertical
         </label>
         <input id="input-signature" type="text" maxlength="36"
           placeholder="By Michael_NB-γ"
-          class="w-full rounded-xl border border-slate-700 bg-slate-900 px-3 py-2.5 text-sm font-mono text-white placeholder-slate-600 focus:border-cyan-400 focus:outline-none" />
+          class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm font-mono text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:outline-none" />
       </div>
 
       <!-- Formato en Modal -->
       <div>
-        <label class="block text-xs font-mono uppercase tracking-wider text-slate-300 mb-1.5">
+        <label class="block text-xs font-mono font-semibold uppercase tracking-wider text-slate-700 mb-1.5">
           Resolución del Canvas
         </label>
         <div class="grid grid-cols-2 gap-2">
           <button type="button" data-modal-format="4:5"
-            class="rounded-xl border px-3 py-2 text-xs font-mono font-medium transition-all">
+            class="rounded-xl border px-3 py-2 text-xs font-mono font-semibold transition-all">
             4:5 (1080×1350)
           </button>
           <button type="button" data-modal-format="9:16"
-            class="rounded-xl border px-3 py-2 text-xs font-mono font-medium transition-all">
+            class="rounded-xl border px-3 py-2 text-xs font-mono font-semibold transition-all">
             9:16 (1080×1920)
           </button>
         </div>
@@ -319,17 +343,17 @@
       <div class="flex flex-col gap-2.5 pt-2">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <button id="btn-test-api-key" type="button"
-            class="w-full rounded-xl border border-cyan-500/40 bg-cyan-500/10 px-4 py-3 text-xs sm:text-sm font-semibold text-cyan-200 hover:bg-cyan-500/20 transition-colors">
+            class="w-full rounded-xl border border-sky-600 bg-sky-50 px-4 py-3 text-xs sm:text-sm font-bold text-sky-800 hover:bg-sky-100 transition-colors">
             🔌 Probar Conexión
           </button>
           <button id="btn-save-settings" type="button"
-            class="w-full rounded-xl bg-cyan-500 px-4 py-3 text-xs sm:text-sm font-bold text-slate-950 hover:bg-cyan-400 transition-colors">
+            class="w-full rounded-xl bg-sky-600 px-4 py-3 text-xs sm:text-sm font-bold text-white hover:bg-sky-500 shadow-sm transition-colors">
             Guardar Configuración
           </button>
         </div>
 
         <button id="btn-demo-local" type="button"
-          class="w-full rounded-xl border border-slate-700 bg-slate-900 px-4 py-2.5 text-xs font-semibold text-slate-300 hover:border-orange-400/60 hover:text-orange-200 transition-colors">
+          class="w-full rounded-xl border border-orange-300 bg-orange-50 px-4 py-2.5 text-xs font-bold text-orange-800 hover:bg-orange-100 transition-colors">
           ⚡ Probar Ahora con Oráculo Local (Sin API Key)
         </button>
       </div>
@@ -338,42 +362,51 @@
 
   <!-- Modal Código QR para Móvil / Instalación PWA -->
   <div id="qr-modal"
-    class="hidden fixed inset-0 z-50 items-center justify-center bg-black/75 p-4 backdrop-blur-sm">
-    <div class="w-full max-w-md rounded-2xl border border-slate-800 bg-[#080E1C] p-5 sm:p-6 shadow-2xl space-y-4">
-      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+    class="hidden fixed inset-0 z-50 items-center justify-center bg-slate-900/55 p-4 backdrop-blur-sm">
+    <div class="w-full max-w-md rounded-2xl border border-slate-300 bg-slate-50 p-5 sm:p-6 shadow-2xl space-y-4 text-slate-900">
+      <div class="flex items-center justify-between border-b border-slate-200 pb-3">
         <div>
-          <h2 class="text-base font-bold text-white">Instalar en tu Teléfono (QR)</h2>
-          <p class="text-xs text-slate-400">Escanea con la cámara de tu móvil para abrir e instalar la app.</p>
+          <h2 class="text-base font-bold text-slate-900">Instalar en tu Teléfono (QR)</h2>
+          <p class="text-xs text-slate-500">Escanea con la cámara de tu móvil para abrir e instalar la app.</p>
         </div>
         <button id="btn-close-qr" type="button"
-          class="rounded-lg p-1.5 text-slate-400 hover:bg-slate-800 hover:text-white">
+          class="rounded-lg p-1.5 text-slate-500 hover:bg-slate-200 hover:text-slate-900">
           ✕
         </button>
       </div>
 
       <div>
-        <label for="input-qr-url" class="block text-xs font-mono uppercase tracking-wider text-cyan-300 mb-1.5">
+        <label for="input-qr-url" class="block text-xs font-mono font-semibold uppercase tracking-wider text-sky-700 mb-1.5">
           Enlace de tu Web (GitHub Pages / Vercel)
         </label>
         <input id="input-qr-url" type="url" autocomplete="off"
-          placeholder="https://tu-usuario.github.io/oraculo-ciber-filosofico/"
-          class="w-full rounded-xl border border-slate-700 bg-slate-900 px-3 py-2 text-xs sm:text-sm font-mono text-white placeholder-slate-500 focus:border-cyan-400 focus:outline-none" />
-        <p id="qr-url-hint" class="hidden mt-2 rounded-lg border border-amber-500/40 bg-amber-500/10 px-2.5 py-2 text-[11px] leading-relaxed text-amber-200"></p>
+          placeholder="https://tu-usuario.github.io/tu-repositorio/"
+          class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs sm:text-sm font-mono text-slate-900 placeholder-slate-400 focus:border-sky-500 focus:outline-none" />
+        <p id="qr-url-hint" class="hidden mt-2 rounded-lg border border-amber-300 bg-amber-50 px-2.5 py-2 text-[11px] leading-relaxed text-amber-900"></p>
+        <button id="btn-fix-gh-pages" type="button"
+          class="hidden mt-2 w-full rounded-lg border border-sky-300 bg-sky-50 px-3 py-1.5 text-[11px] font-mono font-semibold text-sky-800 hover:bg-sky-100 transition-colors text-left"></button>
       </div>
 
-      <div class="flex flex-col items-center justify-center rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
-        <div class="rounded-xl bg-white p-2.5 shadow-lg">
-          <canvas id="qr-canvas" width="240" height="240" class="block h-52 w-52 sm:h-56 sm:w-56"></canvas>
+      <div class="flex flex-col items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-slate-200/70 p-4">
+        <div class="relative rounded-xl bg-white p-3 shadow-md">
+          <canvas id="qr-canvas" width="420" height="420" style="image-rendering: pixelated;" class="block h-52 w-52 sm:h-56 sm:w-56"></canvas>
+          <div id="qr-empty-state"
+            class="hidden absolute inset-0 flex flex-col items-center justify-center rounded-xl bg-slate-100/95 p-4 text-center">
+            <span class="text-2xl mb-1.5">🔗</span>
+            <p class="text-xs font-semibold text-slate-800">Pega arriba el enlace de tu web publicada</p>
+            <p class="text-[11px] text-slate-500 mt-1">Ej: https://tu-usuario.github.io/tu-repo/</p>
+          </div>
         </div>
+        <p id="qr-encoded-label" class="max-w-full truncate text-[11px] font-mono text-slate-600 px-2"></p>
       </div>
 
-      <div class="rounded-xl border border-slate-800/90 bg-slate-900/60 p-3 text-[11px] leading-relaxed text-slate-300 space-y-1">
-        <p><strong class="text-cyan-300">Android (Chrome):</strong> Escanea el QR, abre el enlace y toca <em>"Instalar app"</em> o menú ⋮ → <em>Agregar a pantalla principal</em>.</p>
-        <p><strong class="text-cyan-300">iPhone (Safari):</strong> Escanea el QR, toca el botón <em>Compartir</em> ⬆️ y elige <em>"Agregar a inicio"</em>.</p>
+      <div class="rounded-xl border border-slate-200 bg-white p-3 text-[11px] leading-relaxed text-slate-700 space-y-1">
+        <p><strong class="text-sky-700">Android (Chrome):</strong> Escanea el QR, abre el enlace y toca <em>"Instalar app"</em> o menú ⋮ → <em>Agregar a pantalla principal</em>.</p>
+        <p><strong class="text-sky-700">iPhone (Safari):</strong> Escanea el QR, toca el botón <em>Compartir</em> ⬆️ y elige <em>"Agregar a inicio"</em>.</p>
       </div>
 
       <button id="btn-download-qr" type="button"
-        class="w-full rounded-xl bg-cyan-500 px-4 py-3 text-xs sm:text-sm font-bold text-slate-950 hover:bg-cyan-400 transition-colors">
+        class="w-full rounded-xl bg-sky-600 px-4 py-3 text-xs sm:text-sm font-bold text-white hover:bg-sky-500 shadow-sm transition-colors">
         ⬇ Descargar Imagen QR (PNG)
       </button>
     </div>

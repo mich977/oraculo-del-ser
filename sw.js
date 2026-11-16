@@ -6,8 +6,8 @@
  *  - API de Google Gemini: Network-Only (nunca cachear respuestas generativas en SW)
  */
 
-const CACHE_VERSION = 'oraculo-cf-v1.0.13';
-const RUNTIME_CACHE = 'oraculo-cf-runtime-v1.0.13';
+const CACHE_VERSION = 'oraculo-cf-v1.0.33';
+const RUNTIME_CACHE = 'oraculo-cf-runtime-v1.0.33';
 
 const APP_SHELL_ASSETS = [
   './',
@@ -76,22 +76,18 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Recursos del mismo origen: Stale-While-Revalidate
+  // Recursos del mismo origen: Network-First para aplicar actualizaciones al instante (offline cae a caché)
   if (url.origin === self.location.origin) {
     event.respondWith(
-      caches.match(request).then((cached) => {
-        const networkFetch = fetch(request)
-          .then((response) => {
-            if (response && response.status === 200) {
-              const clone = response.clone();
-              caches.open(CACHE_VERSION).then((cache) => cache.put(request, clone));
-            }
-            return response;
-          })
-          .catch(() => cached);
-
-        return cached || networkFetch;
-      })
+      fetch(request)
+        .then((response) => {
+          if (response && response.status === 200) {
+            const clone = response.clone();
+            caches.open(CACHE_VERSION).then((cache) => cache.put(request, clone));
+          }
+          return response;
+        })
+        .catch(() => caches.match(request))
     );
     return;
   }

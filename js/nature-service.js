@@ -218,6 +218,7 @@
   }
 
   global.OraculoNature = {
-    fetchRandomNaturePhoto
+    fetchRandomNaturePhoto,
+    verifyCorsImage
   };
 })(window);

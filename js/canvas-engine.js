@@ -561,7 +561,7 @@
     const isKeywordFn = buildKeywordChecker(payload?.palabras_clave || []);
     let richLines = [];
 
-    while (fontSize >= 40) {
+    while (fontSize >= 32) {
       ctx.font = `700 ${fontSize}px "Patrick Hand", "Caveat", cursive, sans-serif`;
       richLines = wrapRichTokens(ctx, payload?.frase || '', fraseWidth, isKeywordFn);
       const totalHeight = richLines.length * (fontSize * 1.28);

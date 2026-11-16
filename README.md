@@ -4,7 +4,8 @@ Aplicación Web Progresiva (PWA) sin dependencias ni paso de compilación (*buil
 
 ## Características principales
 
-- **Motor gráfico HTML5 Canvas (`js/canvas-engine.js`):** Renderizado HD (`1080×1350` y `1080×1920`) con fotografía natural a pantalla completa, velo de legibilidad, tipografía de esperanza y respaldo ilustrado offline (`drawProceduralNatureLandscape`).
+- **Motor gráfico HTML5 Canvas (`js/canvas-engine.js`):** Renderizado HD (`1080×1350` y `1080×1920`) con fotografía a pantalla completa, velo de legibilidad, tipografía de esperanza y respaldo ilustrado offline (`drawProceduralNatureLandscape`).
+- **Modo Efeméride Mundial (`js/web-pulse.js` + `js/gemini-service.js`):** Alterna entre mensajes de apoyo/conciencia y **Efemérides & Días Internacionales reales de la fecha** obtenidos desde Wikipedia/Wikimedia (con imagen temática o paisaje natural aleatorio).
 - **Paisajes naturales aleatorios (`js/nature-service.js`):** Selección aleatoria de fotografías de naturaleza desde Wikimedia Commons con verificación CORS para descarga directa en PNG HD.
 - **Pulso Web en Vivo (`js/web-pulse.js` + `api/web-pulse.js`):** Conexión opcional a Wikipedia/Wikiquote y Google Search (vía Gemini) para nutrir los mensajes con contexto actual.
 - **Generación con Google Gemini (`js/gemini-service.js`):** Compatible con API Key ingresada por el usuario desde el modal de configuración (guardada localmente en `localStorage`, nunca en el código fuente) y con modo local offline (`data/sabiduria.js`).

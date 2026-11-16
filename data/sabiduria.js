@@ -75,20 +75,277 @@ window.SABIDURIA_DATA = {
         "aplicacion_practica": "Equilibra tu empuje ejecutivo con pausas de escucha profunda; la acción sin incubación se agota, y la idea sin ejecución se evapora.",
         "arquetipo_visual": "alquimia solar y lunar entrelazada"
       }
+    ],
+    "maestros": [
+      {
+        "id": "ley_hermes",
+        "autor": "Hermes Trismegisto",
+        "obra": "Tabla Esmeralda / Corpus Hermeticum",
+        "etapa": "Tradición Antigua y Clásica",
+        "maxima": "Como es arriba es abajo y como es adentro es afuera; ordena primero tu cielo interior y el mundo responderá.",
+        "ensenanza": "El universo es un tejido consciente y vivo; cuando sanas tu mirada interna transformas lo que reflejas afuera.",
+        "aplicacion_practica": "Observa hoy con qué intención y emoción entras en cada conversación.",
+        "atmosfera": "cosmos"
+      },
+      {
+        "id": "ley_pitagoras",
+        "autor": "Pitágoras",
+        "obra": "Versos de Oro / Escuela Pitagórica",
+        "etapa": "Tradición Antigua y Clásica",
+        "maxima": "Todo vibra en número, música y proporción; escucha el silencio antes de hablar y armoniza tu alma con el cosmos.",
+        "ensenanza": "La medida justa, el orden interior y la gratitud restauran la armonía cuando el ruido diario te dispersa.",
+        "aplicacion_practica": "Respira con ritmo tranquilo tres veces antes de tomar cualquier decisión importante hoy.",
+        "atmosfera": "serenidad"
+      },
+      {
+        "id": "ley_platon_cosmos",
+        "autor": "Platón",
+        "obra": "Timeo / La República",
+        "etapa": "Tradición Antigua y Clásica",
+        "maxima": "El universo entero está guiado por un orden inteligente hacia el Bien; quien busca verdad y belleza se vuelve libre.",
+        "ensenanza": "Detrás de las apariencias cambiantes existen principios estables de justicia, verdad y compasión.",
+        "aplicacion_practica": "Elige hoy contemplar lo noble y constructivo en vez de alimentar el miedo pasajero.",
+        "atmosfera": "cosmos"
+      },
+      {
+        "id": "ley_paracelso",
+        "autor": "Paracelso",
+        "obra": "De Natura Rerum / Medicina Hermética",
+        "etapa": "Tradición Antigua y Clásica",
+        "maxima": "La imaginación es el sol interior del ser humano; cuanto más comprendes la naturaleza, más profundo es tu amor por la vida.",
+        "ensenanza": "Somos un microcosmos unido a la tierra y al cielo; cuidar nuestros pensamientos también sana el cuerpo.",
+        "aplicacion_practica": "Alimenta tu imaginación hoy con imágenes de salud, calma y esperanza real.",
+        "atmosfera": "renacimiento"
+      },
+      {
+        "id": "ley_giordano_bruno",
+        "autor": "Giordano Bruno",
+        "obra": "Sobre el infinito universo y los mundos",
+        "etapa": "Tradición Antigua y Clásica",
+        "maxima": "En cada ser humano habita un universo infinito; el tiempo todo lo transforma, pero nada verdaderamente valioso perece.",
+        "ensenanza": "No hay límites pequeños cuando descubres la chispa creativa y eterna presente en toda la naturaleza.",
+        "aplicacion_practica": "Honra hoy la chispa única de cada persona con quien te cruces en el camino.",
+        "atmosfera": "aurora"
+      },
+      {
+        "id": "ley_atkinson_kybalion",
+        "autor": "William Walker Atkinson (Los Tres Iniciados)",
+        "obra": "El Kybalión",
+        "etapa": "Nuevo Pensamiento",
+        "maxima": "El Todo es Mente y todo péndulo oscila; no pelees contra una emoción densa, eleva su grado hacia la serenidad.",
+        "ensenanza": "Comprender las 7 leyes herméticas te saca del papel de víctima y te devuelve el timón de tu atención.",
+        "aplicacion_practica": "Transmuta hoy el desánimo dando un pequeño paso concreto hacia la gratitud.",
+        "atmosfera": "amanecer"
+      },
+      {
+        "id": "ley_wattles",
+        "autor": "Wallace D. Wattles",
+        "obra": "La ciencia de hacerse rico",
+        "etapa": "Nuevo Pensamiento",
+        "maxima": "Lo mejor que puedes hacer por el mundo entero es ser lo mejor de ti mismo, avanzando con gratitud y sin prisa.",
+        "ensenanza": "La verdadera abundancia nace de crear valor para otros desde una mente agradecida y confiada.",
+        "aplicacion_practica": "Haz tu trabajo de hoy con excelencia serena y da más valor humano del que esperas recibir.",
+        "atmosfera": "amanecer"
+      },
+      {
+        "id": "ley_scovel_shinn",
+        "autor": "Florence Scovel Shinn",
+        "obra": "El juego de la vida y cómo jugarlo",
+        "etapa": "Nuevo Pensamiento",
+        "maxima": "La vida es un espejo que solo te devuelve tu propio reflejo; cambia tus pensamientos y en un instante cambiarán tus caminos.",
+        "ensenanza": "Tu palabra y tu intuición serena abren puertas inesperadas cuando sueltas el miedo y confías en la gracia.",
+        "aplicacion_practica": "Cuida hoy cómo hablas de tu propio futuro: pronuncia palabras de vida, paz y apertura.",
+        "atmosfera": "renacimiento"
+      },
+      {
+        "id": "ley_neville_goddard",
+        "autor": "Neville Goddard",
+        "obra": "El poder de la conciencia",
+        "etapa": "Nuevo Pensamiento",
+        "maxima": "El mundo externo es tu conciencia reflejada hacia afuera; asume con calma la certeza de tu bienestar y persevera en ella.",
+        "ensenanza": "El sentimiento sostenido en silencio vale más que mil esfuerzos ansiosos; imagina desde la paz ya cumplida.",
+        "aplicacion_practica": "Antes de dormir hoy, descansa unos minutos sintiendo gratitud genuina por lo bueno que ya viene.",
+        "atmosfera": "serenidad"
+      },
+      {
+        "id": "ley_bob_proctor",
+        "autor": "Bob Proctor",
+        "obra": "Tú naciste rico / Paradigmas",
+        "etapa": "Divulgadores Contemporáneos",
+        "maxima": "Tus resultados actuales solo reflejan viejos paradigmas inconscientes; cambia la idea que sostienes y transformarás tu realidad.",
+        "ensenanza": "No estás limitado por tus circunstancias pasadas sino por las creencias repetidas que aceptaste sin revisar.",
+        "aplicacion_practica": "Identifica hoy una creencia limitante repetida y reemplázala con una acción nueva y valiente.",
+        "atmosfera": "fortaleza"
+      },
+      {
+        "id": "ley_wayne_dyer",
+        "autor": "Dr. Wayne Dyer",
+        "obra": "Cambia tus pensamientos, cambia tu vida",
+        "etapa": "Divulgadores Contemporáneos",
+        "maxima": "Cuando cambias la forma en que miras las cosas, las cosas que miras empiezan a transformarse frente a ti.",
+        "ensenanza": "Alinearte con la intención amorosa, la bondad y el desapego disuelve la lucha y atrae sincronía real.",
+        "aplicacion_practica": "Ante una persona difícil hoy, elige mirar su humanidad herida y responder con compasión firme.",
+        "atmosfera": "aurora"
+      },
+      {
+        "id": "ley_joe_dispenza",
+        "autor": "Dr. Joe Dispenza",
+        "obra": "Deja de ser tú",
+        "etapa": "Divulgadores Contemporáneos",
+        "maxima": "No puedes crear un futuro distinto pensando y sintiendo en el pasado; habita hoy la gratitud del nuevo mañana.",
+        "ensenanza": "Un pensamiento claro unido a una emoción elevada entrena tu biología y abre posibilidades nuevas en tu vida.",
+        "aplicacion_practica": "Regálate hoy cinco minutos de quietud sintiendo alegría y gratitud antes de revisar mensajes.",
+        "atmosfera": "cosmos"
+      }
     ]
   },
   "estoicismo": {
     "nombre": "Estoicismo",
-    "descripcion": "Filosofía práctica de la fortaleza interior, la dicotomía del control, la serenidad y la virtud cívica.",
+    "descripcion": "Citas precisas y sabiduría práctica de Zenón de Citio, Cleantes de Aso, Crisipo de Solos, Séneca el Joven, Epicteto y Marco Aurelio para cultivar una humanidad más serena y fraterna.",
     "ensenanzas": [
+      {
+        "id": "zenon_silencio",
+        "autor": "Zenón de Citio",
+        "obra": "Vidas de los Filósofos (Diógenes Laercio)",
+        "pilar": "control",
+        "maxima": "Tenemos dos oídos y una sola boca precisamente para escuchar más y hablar menos.",
+        "ensenanza": "Quien escucha de verdad comprende el dolor y la humanidad del otro antes de juzgar.",
+        "aplicacion_practica": "Regala hoy escucha plena y sin interrupciones a alguien cercano."
+      },
+      {
+        "id": "zenon_armonia",
+        "autor": "Zenón de Citio",
+        "obra": "Fragmentos Fundacionales de la Stoa",
+        "pilar": "virtud",
+        "maxima": "El fin de la vida es vivir en armonía con la naturaleza, cultivando la virtud, la razón y el bien común.",
+        "ensenanza": "Ningún éxito externo llena el corazón cuando se pierde el trato humano y digno hacia los demás.",
+        "aplicacion_practica": "Hoy elige actuar con coherencia y respeto incluso cuando nadie te observe."
+      },
+      {
+        "id": "cleantes_himno",
+        "autor": "Cleantes de Aso",
+        "obra": "Himno a Zeus",
+        "pilar": "virtud",
+        "maxima": "La razón universal sabe suavizar lo áspero, volver música el desorden y hacer nacer amor donde abundaba el odio.",
+        "ensenanza": "Siempre es posible responder con templanza y fraternidad en medio de un mundo acelerado y hostil.",
+        "aplicacion_practica": "Transforma hoy una respuesta dura en un gesto sereno que desarme la tensión."
+      },
+      {
+        "id": "cleantes_destino",
+        "autor": "Cleantes de Aso",
+        "obra": "Fragmentos (Enquiridión 53)",
+        "pilar": "aceptacion",
+        "maxima": "Guíame hacia donde el destino disponga; avanzaré con ánimo firme, libre y sin vacilar.",
+        "ensenanza": "Aceptar lo que escapa a nuestro control nos devuelve libertad interior para cuidar lo que sí podemos mejorar.",
+        "aplicacion_practica": "Suelta la queja por lo inevitable y enfoca tu calma en el siguiente paso justo."
+      },
+      {
+        "id": "crisipo_cilindro",
+        "autor": "Crisipo de Solos",
+        "obra": "Sobre el Destino (Cicerón / SVF)",
+        "pilar": "control",
+        "maxima": "El impulso llega desde afuera, pero cómo respondes ante la vida depende enteramente de tu naturaleza interior.",
+        "ensenanza": "Como un cilindro que rueda según su propia forma, las crisis externas solo revelan quién eliges ser por dentro.",
+        "aplicacion_practica": "Ante una provocación hoy, haz una pausa de tres segundos antes de elegir tu respuesta."
+      },
+      {
+        "id": "crisipo_criterio",
+        "autor": "Crisipo de Solos",
+        "obra": "Testimonios y Fragmentos (SVF)",
+        "pilar": "virtud",
+        "maxima": "Si hubiese seguido ciegamente a la multitud, jamás habría despertado al pensamiento libre y humano.",
+        "ensenanza": "Cuidar tu criterio propio frente al ruido masivo protege tu sensibilidad y tu conciencia.",
+        "aplicacion_practica": "Cuestiona hoy la prisa colectiva y dedica unos minutos a pensar por ti mismo en silencio."
+      },
+      {
+        "id": "crisipo_virtud",
+        "autor": "Crisipo de Solos",
+        "obra": "Definición del Telos (Diógenes Laercio)",
+        "pilar": "aceptacion",
+        "maxima": "Vivir con sabiduría es comprender el curso natural de los hechos y responder con rectitud y empatía.",
+        "ensenanza": "Todos formamos parte de una misma comunidad humana interconectada por la razón.",
+        "aplicacion_practica": "Mira el contratiempo de hoy como una escuela compartida de paciencia y humanidad."
+      },
+      {
+        "id": "seneca_humanidad",
+        "autor": "Séneca el Joven",
+        "obra": "Sobre la Ira I, 5",
+        "pilar": "virtud",
+        "maxima": "Nacimos para ayudarnos unos a otros, como dos manos o dos ojos hechos para cooperar juntos.",
+        "ensenanza": "La crueldad y la indiferencia nos enferman; servir con calidez nos devuelve nuestra verdadera estatura humana.",
+        "aplicacion_practica": "Haz hoy un gesto concreto de apoyo desinteresado por alguien que lo necesite."
+      },
+      {
+        "id": "seneca_imaginacion",
+        "autor": "Séneca el Joven",
+        "obra": "Cartas a Lucilio XIII",
+        "pilar": "control",
+        "maxima": "Sufrimos más a menudo en la imaginación que en la realidad.",
+        "ensenanza": "La ansiedad anticipa catástrofes que rara vez ocurren y nos roba la presencia con quienes amamos.",
+        "aplicacion_practica": "Vuelve a los hechos reales de este momento y respira sin alimentar escenarios futuros."
+      },
+      {
+        "id": "seneca_tiempo",
+        "autor": "Séneca el Joven",
+        "obra": "Sobre la brevedad de la vida",
+        "pilar": "virtud",
+        "maxima": "No disponemos de poco tiempo, sino que perdemos mucho.",
+        "ensenanza": "La vida alcanza para amar y construir cosas valiosas cuando dejamos de regalar nuestra atención al ruido.",
+        "aplicacion_practica": "Regala hoy tiempo real y sin pantallas a tu familia o a un proyecto con sentido."
+      },
+      {
+        "id": "seneca_adversidad",
+        "autor": "Séneca el Joven",
+        "obra": "Sobre la providencia",
+        "pilar": "resiliencia",
+        "maxima": "Ningún árbol se vuelve firme y robusto a menos que un viento constante sople contra él.",
+        "ensenanza": "La dificultad superada con dignidad fortalece las raíces del carácter y despierta compasión.",
+        "aplicacion_practica": "Abraza el desafío difícil de hoy sabiendo que está templando tu temple humano."
+      },
+      {
+        "id": "seneca_aceptacion",
+        "autor": "Séneca el Joven",
+        "obra": "Cartas a Lucilio CVII",
+        "pilar": "aceptacion",
+        "maxima": "El destino guía al que lo acepta y arrastra al que se resiste.",
+        "ensenanza": "Aceptar la realidad presente sin amargura libera la energía necesaria para transformarla.",
+        "aplicacion_practica": "Deja de pelear contra lo que ya pasó y pon tu corazón en lo que hoy sí puedes construir."
+      },
+      {
+        "id": "epicteto_juicio",
+        "autor": "Epicteto",
+        "obra": "Enquiridión 5",
+        "pilar": "control",
+        "maxima": "No son las cosas las que perturban a las personas, sino las opiniones que tienen sobre las cosas.",
+        "ensenanza": "Entre lo que pasa y cómo tratas a los demás existe un espacio donde nace tu libertad.",
+        "aplicacion_practica": "Cambia una etiqueta mental de tragedia por una mirada serena y constructiva."
+      },
+      {
+        "id": "epicteto_dicotomia",
+        "autor": "Epicteto",
+        "obra": "Enquiridión 1",
+        "pilar": "aceptacion",
+        "maxima": "Algunas cosas están bajo nuestro control y otras no; la paz comienza cuando dejamos de confundirlas.",
+        "ensenanza": "La tranquilidad nace cuando dejas de exigir aplausos externos y te enfocas en obrar bien.",
+        "aplicacion_practica": "Mide tu día por tu bondad, esfuerzo y rectitud, no por la aprobación ajena."
+      },
+      {
+        "id": "epicteto_disciplina",
+        "autor": "Epicteto",
+        "obra": "Enquiridión 51",
+        "pilar": "resiliencia",
+        "maxima": "¿Cuánto tiempo vas a esperar antes de exigirte lo mejor a ti mismo?",
+        "ensenanza": "El mundo cambia cuando dejamos de postergar el bien que ya sabemos hacer hoy.",
+        "aplicacion_practica": "Empieza hoy mismo con el pequeño acto digno que llevabas días aplazando."
+      },
       {
         "id": "marco_control",
         "autor": "Marco Aurelio",
-        "obra": "Meditaciones",
+        "obra": "Meditaciones IV, 3",
         "pilar": "control",
         "maxima": "Tienes poder sobre tu mente, no sobre los acontecimientos. Date cuenta de esto y encontrarás la fuerza.",
-        "ensenanza": "El sufrimiento nace de intentar gobernar el clima externo en lugar de comandar la ciudadela interior.",
-        "aplicacion_practica": "Separa de inmediato lo que depende de tu juicio y acción de todo lo demás; invierte el 100% de tu energía solo en lo primero."
+        "ensenanza": "Cuidar la calma interior te convierte en un punto de apoyo seguro para quienes te rodean.",
+        "aplicacion_practica": "Recuerda hoy qué sí depende de tu voluntad y actúa desde ahí con serenidad."
       },
       {
         "id": "marco_obstaculo",
@@ -96,98 +353,572 @@ window.SABIDURIA_DATA = {
         "obra": "Meditaciones V, 20",
         "pilar": "resiliencia",
         "maxima": "El impedimento a la acción hace avanzar la acción. Lo que se interpone en el camino se convierte en el camino.",
-        "ensenanza": "Como el fuego que consume cuanto cae en él para arder con más fuerza, el espíritu entrenado convierte cada tropiezo en combustible.",
-        "aplicacion_practica": "Ante un bloqueo inesperado, pregúntate qué virtud específica (paciencia, ingenio, templanza) te exige practicar ahora."
+        "ensenanza": "Cada obstáculo es una oportunidad real para practicar paciencia, justicia y humanidad.",
+        "aplicacion_practica": "Pregúntate hoy qué virtud te pide este problema en lugar de rendirte ante él."
       },
       {
-        "id": "marco_ciudadela",
+        "id": "marco_colmena",
         "autor": "Marco Aurelio",
-        "obra": "Meditaciones VIII, 48",
-        "pilar": "aceptacion",
-        "maxima": "La mente libre de pasiones es una ciudadela inexpugnable; ningún refugio más seguro posee el ser humano.",
-        "ensenanza": "El ruido del mundo solo te hiere si le abres la puerta mediante el asentimiento de tu propio juicio.",
-        "aplicacion_practica": "Retírate brevemente a tu silencio interior antes de responder a una provocación o urgencia ajena."
+        "obra": "Meditaciones VI, 54",
+        "pilar": "virtud",
+        "maxima": "Lo que no beneficia a la colmena tampoco beneficia a la abeja; cuidarnos juntos es nuestra verdadera naturaleza.",
+        "ensenanza": "Nadie se salva solo: nuestra alegría profunda crece cuando cuidamos el bienestar común.",
+        "aplicacion_practica": "Incluye el bien de otros en cada decisión pequeña que tomes hoy."
       },
       {
         "id": "marco_virtud",
         "autor": "Marco Aurelio",
-        "obra": "Meditaciones IV, 24",
+        "obra": "Meditaciones X, 16",
         "pilar": "virtud",
-        "maxima": "No pierdas más tiempo discutiendo cómo debe ser un buen hombre. Sé uno.",
-        "ensenanza": "La filosofía que no se traduce en carácter, justicia y sobriedad cotidiana es solo vanidad intelectual.",
-        "aplicacion_practica": "Sustituye una queja o debate estéril del día por una acción silenciosa de integridad."
+        "maxima": "No pierdas más tiempo discutiendo cómo debe ser una buena persona. Sé una.",
+        "ensenanza": "La humanidad se vuelve más humana con hechos sencillos y cotidianos, no con discursos vacíos.",
+        "aplicacion_practica": "Demuestra hoy con un acto concreto el tipo de ser humano que el mundo necesita."
+      }
+    ]
+  },
+  "taoismo": {
+    "nombre": "Taoísmo: Laozi, Zhuangzi, Liezi, Wang Chongyang y Maestros Celestiales",
+    "descripcion": "Historias breves y frases vivas de los grandes maestros taoístas para devolver calma, sentido real y esperanza frente al ruido digital.",
+    "historias": [
+      {
+        "id": "tao_caballo_anciano",
+        "titulo": "El caballo del anciano (¿Suerte o desgracia?)",
+        "maestro": "Lie Yukou (Liezi) / Huainanzi",
+        "historia": "Un anciano perdió su único caballo y sus vecinos lo lamentaron; él respondió: '¿Quién sabe si es malo?'. Días después el caballo volvió con corceles salvajes; su hijo cayó domándolos y se quebró una pierna, y gracias a esa lesión no fue enviado a la guerra.",
+        "ensenanza": "No juzgues demasiado pronto una pérdida de hoy: a veces lo que duele te está protegiendo para mañana.",
+        "gancho_sugerido": "LIEZI · ¿QUIÉN SABE QUÉ ES SUERTE HOY?",
+        "frase_corta": "Lo que hoy parece una pérdida muchas veces te cuida en silencio para el mañana; confía sin apurar el juicio.",
+        "palabras_clave": [
+          "pérdida",
+          "silencio",
+          "confía"
+        ],
+        "atmosfera": "amanecer"
       },
       {
-        "id": "seneca_imaginacion",
-        "autor": "Séneca",
-        "obra": "Cartas a Lucilio XIII",
-        "pilar": "control",
-        "maxima": "Sufrimos más a menudo en la imaginación que en la realidad.",
-        "ensenanza": "La ansiedad anticipa catástrofes que rara vez ocurren y multiplica el dolor de las que sí llegan.",
-        "aplicacion_practica": "Verifica los hechos desnudos del presente y despoja al miedo de las historias futuras que aún no existen."
+        "id": "tao_agua_roca",
+        "titulo": "La fuerza silenciosa del agua",
+        "maestro": "Laozi (Lao Tsé) · Tao Te Ching",
+        "historia": "Un joven preguntó cómo vencer obstáculos tan duros como una montaña. El maestro señaló un arroyo: el agua es lo más blando y dócil del mundo, pero con paciencia constante rodea o termina puliendo la roca más firme.",
+        "ensenanza": "Avanzar con calma adaptable te lleva más lejos que golpearte contra muros a la fuerza.",
+        "gancho_sugerido": "LAOZI (LAO TSÉ) · EL SECRETO DEL AGUA",
+        "frase_corta": "Nada hay más suave que el agua, pero nada la supera frente a lo duro; avanza con calma y abrirás camino.",
+        "palabras_clave": [
+          "agua",
+          "calma",
+          "camino"
+        ],
+        "atmosfera": "serenidad"
       },
       {
-        "id": "seneca_tiempo",
-        "autor": "Séneca",
-        "obra": "Sobre la brevedad de la vida",
-        "pilar": "virtud",
-        "maxima": "No disponemos de poco tiempo, sino que perdemos mucho.",
-        "ensenanza": "La vida es suficientemente larga para grandes obras si no la dispersamos en distracciones y aprobación ajena.",
-        "aplicacion_practica": "Protege tus horas de atención profunda como si defendieras tu patrimonio más sagrado."
+        "id": "tao_bambu_nieve",
+        "titulo": "El roble, la caña y la nieve",
+        "maestro": "Laozi (Lao Tsé) · Tradición Taoísta",
+        "historia": "Durante una nevada intensa, un gran roble rígido acumuló peso en sus ramas hasta quebrarse con estruendo. A su lado, un joven bambú se dobló hacia el suelo, dejó caer la nieve y volvió a erguirse intacto.",
+        "ensenanza": "Ceder un momento ante la tormenta no te hace débil: te mantiene en pie para ver el sol.",
+        "gancho_sugerido": "LAOZI · DOBLARSE SIN QUEBRARSE",
+        "frase_corta": "Lo rígido se quiebra bajo la tormenta; quien cultiva flexibilidad suelta el peso a tiempo y vuelve a erguirse.",
+        "palabras_clave": [
+          "tormenta",
+          "flexibilidad",
+          "erguirse"
+        ],
+        "atmosfera": "fortaleza"
       },
       {
-        "id": "seneca_adversidad",
-        "autor": "Séneca",
-        "obra": "Sobre la providencia",
-        "pilar": "resiliencia",
-        "maxima": "Ningún árbol se vuelve firme y robusto a menos que un viento constante sople contra él.",
-        "ensenanza": "La comodidad prolongada debilita las raíces del carácter; la dificultad calibrada revela tu verdadera talla.",
-        "aplicacion_practica": "Agradece la fricción del entrenamiento difícil: es lo que forja estabilidad cuando llega la tormenta real."
+        "id": "tao_vasija_vacia",
+        "titulo": "La utilidad del vacío",
+        "maestro": "Laozi (Lao Tsé) · Tao Te Ching XI",
+        "historia": "Un alfarero moldeó barro brillante hasta crear una vasija hermosa, pero el maestro le recordó: 'Amamos el barro por su forma, pero solo el espacio vacío de su interior es lo que permite llenarla de agua y vida'.",
+        "ensenanza": "Si llenas cada minuto de pantallas, ruido y prisa, no dejas espacio para escuchar tu propia vida.",
+        "gancho_sugerido": "LAOZI · EL VALOR DE HACER ESPACIO",
+        "frase_corta": "La vasija sirve gracias al hueco que guarda dentro; apagar el ruido un momento abre lugar para lo real.",
+        "palabras_clave": [
+          "ruido",
+          "silencio",
+          "real"
+        ],
+        "atmosfera": "serenidad"
       },
       {
-        "id": "seneca_aceptacion",
-        "autor": "Séneca",
-        "obra": "Cartas a Lucilio CVII",
-        "pilar": "aceptacion",
-        "maxima": "El destino guía al que lo acepta y arrastra al que se resiste.",
-        "ensenanza": "Amor Fati no es resignación pasiva, sino cooperación lúcida con los hechos inevitables para dirigir mejor el próximo paso.",
-        "aplicacion_practica": "Deja de pelear con lo que ya sucedió; acéptalo como el tablero real sobre el que ahora te toca jugar."
+        "id": "tao_laozi_viaje",
+        "titulo": "El viaje de mil millas",
+        "maestro": "Laozi (Lao Tsé) · Tao Te Ching LXIV",
+        "historia": "Un aprendiz se abrumó mirando la cima lejana y quiso rendirse antes de salir. El maestro sonrió señalando sus sandalias: 'Un árbol enorme nace de un brote mínimo, y todo camino de mil leguas empieza bajo tus pies hoy'.",
+        "ensenanza": "No te compares con vidas editadas ajenas: tu único trabajo real es dar hoy un paso honesto.",
+        "gancho_sugerido": "LAOZI (LAO TSÉ) · UN PASO REAL HOY",
+        "frase_corta": "Un viaje de mil millas comienza bajo tus propios pies; deja la prisa irreal y da hoy un paso honesto.",
+        "palabras_clave": [
+          "paso",
+          "prisa",
+          "honesto"
+        ],
+        "atmosfera": "amanecer"
       },
       {
-        "id": "epicteto_juicio",
-        "autor": "Epicteto",
-        "obra": "Enquiridión 5",
-        "pilar": "control",
-        "maxima": "No son las cosas las que perturban a los hombres, sino las opiniones que tienen sobre las cosas.",
-        "ensenanza": "Entre el estímulo y la respuesta existe una brecha donde habita tu interpretación. Ahí reside tu libertad.",
-        "aplicacion_practica": "Reformula la etiqueta mental que pusiste a un contratiempo: llámalo dato o entrenamiento en lugar de tragedia."
+        "id": "tao_barca_vacia",
+        "titulo": "La barca vacía en el río",
+        "maestro": "Zhuangzi (Chuang Tzu)",
+        "historia": "Si remas en la niebla y otra barca choca contra la tuya, te enfureces si crees que alguien te embistió a propósito. Pero si al mirar descubres que la barca venía vacía a la deriva, tu enojo desaparece al instante.",
+        "ensenanza": "Casi nadie camina buscando herirte; suelta la pelea imaginaria y cuida tu propia calma.",
+        "gancho_sugerido": "ZHUANGZI (CHUANG TZU) · LA BARCA VACÍA",
+        "frase_corta": "Muchas tormentas ajenas son como una barca vacía en la niebla: no son contra ti, suelta el enojo y sigue.",
+        "palabras_clave": [
+          "barca",
+          "niebla",
+          "enojo"
+        ],
+        "atmosfera": "aurora"
       },
       {
-        "id": "epicteto_dicotomia",
-        "autor": "Epicteto",
-        "obra": "Enquiridión 1",
-        "pilar": "aceptacion",
-        "maxima": "Algunas cosas están bajo nuestro control y otras no; la felicidad comienza cuando dejamos de confundirlas.",
-        "ensenanza": "Quien desea lo que depende de otros entrega su soberanía emocional al capricho del azar.",
-        "aplicacion_practica": "Mide tu éxito por la excelencia de tu esfuerzo y rectitud, no por el aplauso ni el resultado externo."
+        "id": "tao_cocinero_ding",
+        "titulo": "El filo que no se desgasta",
+        "maestro": "Zhuangzi (Chuang Tzu) · El Cocinero Ding",
+        "historia": "Un cocinero usó el mismo cuchillo durante diecinueve años sin perder jamás el filo. Al preguntarle su secreto, explicó que en lugar de cortar golpeando huesos duros, guiaba la hoja con suavidad por los espacios naturales.",
+        "ensenanza": "Cuando fluyes con el ritmo real de las cosas (Wu Wei), logras mucho más sin agotarte.",
+        "gancho_sugerido": "ZHUANGZI · FLUIR SIN DESGASTARTE",
+        "frase_corta": "Quien choca contra cada muro se agota; quien descubre el espacio natural avanza liviano y conserva su fuerza.",
+        "palabras_clave": [
+          "espacio",
+          "liviano",
+          "fuerza"
+        ],
+        "atmosfera": "fortaleza"
       },
       {
-        "id": "epicteto_disciplina",
-        "autor": "Epicteto",
-        "obra": "Disertaciones",
-        "pilar": "resiliencia",
-        "maxima": "¿Cuánto tiempo vas a esperar antes de exigirte lo mejor a ti mismo?",
-        "ensenanza": "Postergar la propia grandeza esperando condiciones ideales es una forma elegante de rendición.",
-        "aplicacion_practica": "Aplica tus principios hoy mismo en el detalle más pequeño, sin esperar el lunes ni la calma perfecta."
+        "id": "tao_arbol_inutil",
+        "titulo": "El viejo árbol torcido",
+        "maestro": "Zhuangzi (Chuang Tzu) · El Árbol Inútil",
+        "historia": "Un carpintero pasó de largo junto a un enorme árbol de tronco nudoso diciendo que no servía para hacer muebles rectos. Años después, ese mismo árbol vivía sano y ofrecía sombra fresca a todo el pueblo viajero.",
+        "ensenanza": "No necesitas encajar en moldes virales para tener valor: tu diferencia puede ser tu refugio.",
+        "gancho_sugerido": "ZHUANGZI · TU FORMA ÚNICA TIENE VALOR",
+        "frase_corta": "Aquello que el mundo juzgó imperfecto en ti puede ser la raíz exacta que hoy te sostiene vivo y libre.",
+        "palabras_clave": [
+          "raíz",
+          "vivo",
+          "libre"
+        ],
+        "atmosfera": "renacimiento"
       },
       {
-        "id": "epicteto_silencio",
-        "autor": "Epicteto",
-        "obra": "Fragmentos",
-        "pilar": "virtud",
-        "maxima": "Guarda silencio la mayor parte del tiempo, o di solo lo necesario y con pocas palabras.",
-        "ensenanza": "La dispersión verbal diluye la energía de la intención. El carácter habla con actos sostenidos.",
-        "aplicacion_practica": "Antes de anunciar tus planes o defender tu ego, demuestra tu dirección en silencio."
+        "id": "tao_sueno_mariposa",
+        "titulo": "El sueño de la mariposa",
+        "maestro": "Zhuangzi (Chuang Tzu)",
+        "historia": "Zhuangzi soñó una tarde que era una mariposa volando libre sin recordar preocupaciones humanas. Al despertar se preguntó si era un hombre que soñó ser mariposa o una mariposa soñando ahora ser hombre.",
+        "ensenanza": "No te reduzcas a tus preocupaciones pasajeras; tu conciencia es más amplia que este instante.",
+        "gancho_sugerido": "ZHUANGZI · ERES MÁS QUE ESTE INSTANTE",
+        "frase_corta": "No eres solo el peso que cargas hoy: cambia tu mirada con humildad y descubre la libertad que ya habita en ti.",
+        "palabras_clave": [
+          "mirada",
+          "libertad",
+          "habita"
+        ],
+        "atmosfera": "cosmos"
+      },
+      {
+        "id": "tao_liezi_hacha",
+        "titulo": "El ladrón del hacha",
+        "maestro": "Lie Yukou (Liezi) · El Libro de la Perfecta Vacuidad",
+        "historia": "Un hombre perdió su hacha y sospechó del hijo de su vecino: le parecía que caminaba, hablaba y miraba exactamente como un ladrón. Al día siguiente encontró su hacha enterrada en su propio huerto y, al ver de nuevo al joven, notó que ni un solo gesto suyo parecía sospechoso.",
+        "ensenanza": "Cuando limpias el miedo en tu mente, el mundo alrededor vuelve a mostrarse limpio y humano.",
+        "gancho_sugerido": "LIE YUKOU (LIEZI) · LIMPIAR LA MIRADA",
+        "frase_corta": "El miedo distorsiona lo que ves en los demás; cuando sueltas la sospecha, el mundo recupera su rostro humano.",
+        "palabras_clave": [
+          "miedo",
+          "mirada",
+          "humano"
+        ],
+        "atmosfera": "amanecer"
+      },
+      {
+        "id": "tao_liezi_montana",
+        "titulo": "El anciano que movió las montañas",
+        "maestro": "Lie Yukou (Liezi) · Yugong Yishan",
+        "historia": "Un anciano casi nonagenario empezó a retirar piedra por piedra dos montañas que bloqueaban la salida de su aldea. Un hombre le dijo riendo que moriría sin lograrlo, y el anciano respondió: 'Mis hijos y nietos seguirán, y las montañas no crecen'. Conmovido por su fe tranquila, el cielo apartó las cumbres.",
+        "ensenanza": "La constancia humilde y sin vanidad mueve obstáculos que parecían eternos.",
+        "gancho_sugerido": "LIE YUKOU (LIEZI) · FE CON CONSTANCIA",
+        "frase_corta": "Quien busca plenitud afuera persigue espejismos; quien mira adentro halla fuerza tranquila para mover montañas.",
+        "palabras_clave": [
+          "adentro",
+          "fuerza",
+          "montañas"
+        ],
+        "atmosfera": "fortaleza"
+      },
+      {
+        "id": "tao_wang_quietud",
+        "titulo": "La calma que ordena el espíritu",
+        "maestro": "Wang Chongyang · Escuela Quanzhen",
+        "historia": "Un buscador preguntó a Wang Chongyang cómo hallar paz en tiempos caóticos. El maestro respondió que primero se sosiega el cuerpo y la prisa: cuando la mente descansa confiada, el aliento vital y el espíritu se vuelven claros y expansivos.",
+        "ensenanza": "La claridad y la quietud interior valen más que mil estímulos rápidos de una pantalla.",
+        "gancho_sugerido": "WANG CHONGYANG · CLARIDAD Y QUIETUD",
+        "frase_corta": "Cuando el cuerpo se sosiega, la mente alcanza serenidad y nada externo vuelve a atarte; la claridad vive adentro.",
+        "palabras_clave": [
+          "serenidad",
+          "claridad",
+          "adentro"
+        ],
+        "atmosfera": "serenidad"
+      },
+      {
+        "id": "tao_wang_libertad",
+        "titulo": "La alegría sencilla del Camino",
+        "maestro": "Wang Chongyang · Quince Discursos",
+        "historia": "Lejos de los lujos de la corte, Wang Chongyang y sus discípulos vivían con lo justo: conversaban sin prisa, cantaban versos sencillos y contemplaban las nubes. Enseñaba que la naturaleza interior pura es el verdadero elixir dorado.",
+        "ensenanza": "La esperanza regresa cuando vuelves a disfrutar lo simple, real y compartido cara a cara.",
+        "gancho_sugerido": "WANG CHONGYANG · EL ELIXIR DE LO SIMPLE",
+        "frase_corta": "La naturaleza serena es el verdadero tesoro; vuelve a lo sencillo y descubrirás que nada te falta para vivir en paz.",
+        "palabras_clave": [
+          "sencillo",
+          "tesoro",
+          "paz"
+        ],
+        "atmosfera": "renacimiento"
+      },
+      {
+        "id": "tao_tianshi_valle",
+        "titulo": "El valle que todo lo acoge",
+        "maestro": "Maestros Celestiales (Tianshi) · Zhang Daoling",
+        "historia": "En los tiempos turbulentos de la dinastía Han, Zhang Daoling enseñaba en las montañas que ni los ritos caros ni las apariencias salvan al hombre, sino actuar sin dañar la vida, ayudar a la comunidad y ceder como el agua en el valle.",
+        "ensenanza": "No necesitas aparentar poder en redes: la bondad cotidiana es tu fuerza indestructible.",
+        "gancho_sugerido": "MAESTROS CELESTIALES · FUERZA DEL VALLE",
+        "frase_corta": "Sé como el valle que acoge y como el agua que cede sin quebrarse; en tu bondad silenciosa habita fuerza real.",
+        "palabras_clave": [
+          "bondad",
+          "silenciosa",
+          "real"
+        ],
+        "atmosfera": "aurora"
+      },
+      {
+        "id": "tao_tianshi_riqueza",
+        "titulo": "La riqueza de saber contentarse",
+        "maestro": "Maestros Celestiales (Tianshi) · Comentario Xiang'er",
+        "historia": "El antiguo texto Xiang'er de los Maestros Celestiales recordaba a las aldeas que el cielo no se deja comprar por la fama ni el exceso, sino que responde al corazón recto que cuida a los suyos y agradece lo suficiente (Zhi Zu).",
+        "ensenanza": "Desconectarte de la comparación constante y agradecer lo que ya tienes devuelve la paz de golpe.",
+        "gancho_sugerido": "MAESTROS CELESTIALES · PAZ DEL CORAZÓN",
+        "frase_corta": "La verdadera riqueza no está en acumular miradas ni excesos, sino en saber agradecer lo esencial y cuidar la paz.",
+        "palabras_clave": [
+          "riqueza",
+          "agradecer",
+          "paz"
+        ],
+        "atmosfera": "cosmos"
+      }
+    ]
+  },
+  "filosofia": {
+    "nombre": "Filosofía Universal (Sócrates a Eckhart Tolle)",
+    "descripcion": "Citas fieles y enseñanzas vivas de 19 grandes pensadores desde la Grecia clásica hasta la presencia contemporánea para devolver sentido y humanidad al día a día.",
+    "ensenanzas": [
+      {
+        "id": "filo_socrates",
+        "autor": "Sócrates",
+        "obra": "Apología de Sócrates (Platón)",
+        "maxima": "Una vida sin examen no merece ser vivida; la verdadera sabiduría comienza al reconocer con humildad cuánto ignoramos.",
+        "ensenanza": "Preguntarte con honestidad qué estás haciendo y por qué te rescata de vivir en piloto automático.",
+        "aplicacion_practica": "Haz una pausa hoy para cuestionar una prisa o creencia automática antes de obedecerla.",
+        "atmosfera": "amanecer"
+      },
+      {
+        "id": "filo_platon",
+        "autor": "Platón",
+        "obra": "La República / Fedro",
+        "maxima": "La armonía y el bien elevan las alas del alma; incluso desde la caverna de las sombras siempre es posible mirar hacia la luz.",
+        "ensenanza": "Lo que contemplas y conversas todos los días moldea lo que ves posible en tu propia vida.",
+        "aplicacion_practica": "Alimenta hoy tu mente con belleza, diálogo sincero y verdades más altas que el ruido pasajero.",
+        "atmosfera": "cosmos"
+      },
+      {
+        "id": "filo_aristoteles",
+        "autor": "Aristóteles",
+        "obra": "Ética a Nicómaco",
+        "maxima": "Somos lo que hacemos de forma repetida; la virtud y la excelencia no son un acto aislado, sino un hábito cotidiano.",
+        "ensenanza": "Tu carácter y tu bienestar se construyen con pequeños gestos amables repetidos cada día.",
+        "aplicacion_practica": "Practica hoy una sola acción justa o generosa aunque parezca pequeña.",
+        "atmosfera": "fortaleza"
+      },
+      {
+        "id": "filo_epicuro",
+        "autor": "Epicuro",
+        "obra": "Carta a Meneceo",
+        "maxima": "No es más rico quien más acumula, sino quien menos necesita y cultiva amistad verdadera y paz serena en el alma.",
+        "ensenanza": "La ataraxia (paz interior libre de miedos vanos) nace de disfrutar lo simple con personas reales.",
+        "aplicacion_practica": "Comparte hoy tiempo sencillo con alguien querido dejando de lado las comparaciones materiales.",
+        "atmosfera": "serenidad"
+      },
+      {
+        "id": "filo_agustin",
+        "autor": "Agustín de Hipona (San Agustín)",
+        "obra": "De vera religione / Confesiones",
+        "maxima": "No salgas fuera de ti persiguiendo espejismos, vuelve a tu interior: en lo profundo del corazón humano habita la verdad.",
+        "ensenanza": "Las respuestas que buscas afuera esperan primero un encuentro honesto contigo mismo.",
+        "aplicacion_practica": "Dedica diez minutos de silencio interior antes de buscar validación en el entorno.",
+        "atmosfera": "aurora"
+      },
+      {
+        "id": "filo_tomas_aquino",
+        "autor": "Tomás de Aquino",
+        "obra": "Suma Teológica",
+        "maxima": "La razón clara y el amor hacia el bien común no compiten: ambos iluminan la dignidad inviolable de cada ser humano.",
+        "ensenanza": "Pensar con rigor y obrar con misericordia se fortalecen mutuamente en la vida diaria.",
+        "aplicacion_practica": "Une hoy lucidez intelectual con trato cálido hacia quienes piensan distinto.",
+        "atmosfera": "amanecer"
+      },
+      {
+        "id": "filo_maquiavelo",
+        "autor": "Nicolás Maquiavelo",
+        "obra": "El Príncipe / Discursos",
+        "maxima": "Donde hay firme voluntad y lectura lúcida de la realidad, ninguna dificultad prolongada se vuelve imposible.",
+        "ensenanza": "La fortuna cambia sin aviso, pero la preparación serena y la iniciativa te permiten mantener el timón.",
+        "aplicacion_practica": "Enfrenta hoy los hechos tal como son, sin ingenuidad ni parálisis, y da el primer paso concreto.",
+        "atmosfera": "fortaleza"
+      },
+      {
+        "id": "filo_descartes",
+        "autor": "René Descartes",
+        "obra": "Discurso del método",
+        "maxima": "No basta tener buen ingenio; lo principal es aplicarlo bien, dudando con calma antes de aceptar cualquier ruido como verdad.",
+        "ensenanza": "Desarmar un problema grande en partes simples y claras devuelve al instante la tranquilidad mental.",
+        "aplicacion_practica": "Divide hoy lo que te abruma en tres pasos pequeños y resuelve solo el primero.",
+        "atmosfera": "serenidad"
+      },
+      {
+        "id": "filo_spinoza",
+        "autor": "Baruch Spinoza",
+        "obra": "Ética / Tratado Político",
+        "maxima": "La paz no es mera ausencia de conflicto sino fuerza del alma; comprender nuestras emociones transforma el dolor en libertad.",
+        "ensenanza": "Cuando entiendes la causa de tu tristeza o ira, dejas de ser esclavo de la reacción impulsiva.",
+        "aplicacion_practica": "Observa hoy una emoción intensa con curiosidad comprensiva en lugar de pelear contra ella.",
+        "atmosfera": "aurora"
+      },
+      {
+        "id": "filo_locke",
+        "autor": "John Locke",
+        "obra": "Ensayo sobre el entendimiento humano",
+        "maxima": "La libertad y la convivencia florecen cuando la razón se abre a la experiencia, al diálogo y a la tolerancia mutua.",
+        "ensenanza": "Nadie posee toda la verdad; escuchar otras experiencias amplía nuestro propio mundo.",
+        "aplicacion_practica": "Escucha hoy una perspectiva distinta a la tuya con respeto sincero antes de responder.",
+        "atmosfera": "amanecer"
+      },
+      {
+        "id": "filo_hume",
+        "autor": "David Hume",
+        "obra": "Tratado de la naturaleza humana",
+        "maxima": "La razón fría por sí sola no mueve el corazón: es la simpatía humana hacia el otro lo que despierta la justicia.",
+        "ensenanza": "Sentir con el prójimo no es debilidad lógica, sino el cimiento vivo de toda comunidad sana.",
+        "aplicacion_practica": "Deja que la empatía guíe una decisión práctica de tu jornada hoy.",
+        "atmosfera": "renacimiento"
+      },
+      {
+        "id": "filo_kant",
+        "autor": "Immanuel Kant",
+        "obra": "Fundamentación de la metafísica de las costumbres",
+        "maxima": "Trata siempre a la humanidad, tanto en ti como en cualquier otra persona, como un fin valioso y nunca solo como un medio.",
+        "ensenanza": "Ninguna meta, algoritmo o interés vale por encima de la dignidad humana.",
+        "aplicacion_practica": "Agradece hoy mirando a los ojos a quien te atiende o acompaña, reconociendo su valor único.",
+        "atmosfera": "cosmos"
+      },
+      {
+        "id": "filo_hegel",
+        "autor": "Georg Wilhelm Friedrich Hegel",
+        "obra": "Lecciones sobre la filosofía de la historia",
+        "maxima": "Nada verdaderamente grande en la historia humana se ha logrado sin pasión; incluso las crisis preparan una conciencia más libre.",
+        "ensenanza": "Las contradicciones de una etapa difícil contienen la semilla de una síntesis superior.",
+        "aplicacion_practica": "Convierte una tensión actual en impulso creador en lugar de caer en cinismo.",
+        "atmosfera": "fortaleza"
+      },
+      {
+        "id": "filo_marx",
+        "autor": "Karl Marx",
+        "obra": "Tesis sobre Feuerbach",
+        "maxima": "No basta con interpretar el mundo desde lejos: el sentido del pensamiento despierta cuando ayudamos a transformarlo con justicia.",
+        "ensenanza": "Las ideas cobran vida cuando alivian condiciones reales de las personas de carne y hueso.",
+        "aplicacion_practica": "Pasa hoy de la crítica pasiva a una acción solidaria concreta en tu entorno cercano.",
+        "atmosfera": "fortaleza"
+      },
+      {
+        "id": "filo_nietzsche",
+        "autor": "Friedrich Nietzsche",
+        "obra": "El crepúsculo de los ídolos",
+        "maxima": "Quien tiene un porqué sólido para vivir puede atravesar casi cualquier cómo y volver a florecer tras el invierno.",
+        "ensenanza": "Amar tu destino y crear sentido propio te vuelve más fuerte que cualquier tropiezo.",
+        "aplicacion_practica": "Recuerda hoy ese propósito vital por el cual vale la pena levantarte con ánimo.",
+        "atmosfera": "renacimiento"
+      },
+      {
+        "id": "filo_wittgenstein",
+        "autor": "Ludwig Wittgenstein",
+        "obra": "Tractatus Logico-Philosophicus",
+        "maxima": "Los límites de mi lenguaje significan los límites de mi mundo; cuidar tus palabras transforma lo que crees posible.",
+        "ensenanza": "Muchos tormentos mentales se disuelven cuando nombramos con claridad y sencillez lo que sentimos.",
+        "aplicacion_practica": "Habla hoy contigo y con otros usando palabras precisas, honestas y constructoras de paz.",
+        "atmosfera": "serenidad"
+      },
+      {
+        "id": "filo_heidegger",
+        "autor": "Martin Heidegger",
+        "obra": "Serenidad (Gelassenheit) / Ser y Tiempo",
+        "maxima": "No solo calcules ni corras detrás de lo inmediato: aprende a habitar el mundo con asombro, escucha y serenidad.",
+        "ensenanza": "El pensamiento meditativo nos devuelve la presencia viva frente a un mundo dominado por la prisa técnica.",
+        "aplicacion_practica": "Contempla hoy el cielo o un árbol sin sacar el teléfono ni medir el reloj.",
+        "atmosfera": "serenidad"
+      },
+      {
+        "id": "filo_arendt",
+        "autor": "Hannah Arendt",
+        "obra": "La condición humana",
+        "maxima": "El perdón es la llave de la libertad humana: rompe la cadena del pasado para que podamos volver a empezar juntos.",
+        "ensenanza": "Cada nacimiento y cada encuentro traen la capacidad asombrosa de iniciar algo nuevo en el mundo.",
+        "aplicacion_practica": "Suelta hoy un viejo rencor o conversa con honestidad para abrir un nuevo comienzo.",
+        "atmosfera": "aurora"
+      },
+      {
+        "id": "filo_tolle",
+        "autor": "Eckhart Tolle",
+        "obra": "El poder del ahora",
+        "maxima": "Toda ansiedad nace de vivir atrapado en un futuro imaginario; vuelve tu atención al instante presente y la paz aparece.",
+        "ensenanza": "En este único momento real, mientras respiras, casi siempre tienes todo lo necesario para estar en calma.",
+        "aplicacion_practica": "Siente hoy tu respiración profunda durante treinta segundos y habita plenamente el ahora.",
+        "atmosfera": "aurora"
+      }
+    ]
+  },
+  "sabiduria_humana": {
+    "nombre": "Sabiduría Humana (Parábolas de Jesús, Eclesiastés & Proverbios)",
+    "descripcion": "Enseñanzas humanas y éticas de vida traducidas a lenguaje cercano, sin dogmas ni etiquetas religiosas, para despertar empatía, calma y bondad cotidiana.",
+    "ensenanzas": [
+      {
+        "id": "hum_siembra_cosecha",
+        "autor": "Sabiduría de Vida · Ley de Siembra",
+        "obra": "Parábolas Humanas (Tradición de Jesús)",
+        "gancho_sugerido": "LO QUE PONES EN EL MUNDO VUELVE A TI",
+        "maxima": "Todo lo que pones en circulación —palabras, calma, respeto o enojo— termina volviendo tarde o temprano a tu propia mesa.",
+        "historia": "Incluso sin mirar dogmas, la vida funciona como un campo fértil: nadie siembra espinas esperando cosechar frutos dulces; cada gesto cotidiano deja una huella que regresa a tu propia vida.",
+        "ensenanza": "Cuidar la forma en que tratas a los demás hoy es también cuidar la paz que recibirás mañana.",
+        "aplicacion_practica": "Elige hoy sembrar un trato amable incluso en una fila o conversación apurada.",
+        "atmosfera": "amanecer"
+      },
+      {
+        "id": "hum_regla_oro",
+        "autor": "Ética de la Reciprocidad",
+        "obra": "Sermón de la Montaña (Lectura Humana)",
+        "gancho_sugerido": "REGALA EL TRATO QUE QUIERES ENCONTRAR",
+        "maxima": "Ofrece hoy a las personas exactamente el mismo respeto, paciencia y escucha que sueñas encontrar cuando estás agotado.",
+        "historia": "En lugar de esperar a que el mundo cambie primero o medir lo que otros merecen, esta enseñanza propone iniciar tú el clima humano que quieres habitar.",
+        "ensenanza": "No puedes controlar cómo actúan todos afuera, pero sí puedes decidir qué calidad de ser humano encuentra quien se cruza contigo.",
+        "aplicacion_practica": "Responde hoy con la delicadeza que te gustaría recibir en un mal día.",
+        "atmosfera": "aurora"
+      },
+      {
+        "id": "hum_soltar_juicio",
+        "autor": "Humildad Cotidiana",
+        "obra": "Parábola de la Paja y la Viga (Lectura Humana)",
+        "gancho_sugerido": "ANTES DE JUZGAR, MIRA TUS PROPIAS GRIETAS",
+        "maxima": "Antes de señalar el error ajeno, mira con honestidad tus propias grietas; la humildad desarma cualquier conflicto.",
+        "historia": "Solemos ver con lupa cada tropiezo del otro mientras olvidamos nuestras propias sombras; reconocer nuestra fragilidad compartida vuelve innecesaria la soberbia.",
+        "ensenanza": "Quien recuerda que también se equivoca aprende a corregir con ternura y sin herir.",
+        "aplicacion_practica": "Sustituye hoy una crítica rápida por una pregunta amable para entender el contexto del otro.",
+        "atmosfera": "serenidad"
+      },
+      {
+        "id": "hum_perdon_libre",
+        "autor": "Libertad Emocional",
+        "obra": "Enseñanzas sobre el Perdón (Lectura Humana)",
+        "gancho_sugerido": "PERDONAR ES SOLTAR TU PROPIA CADENA",
+        "maxima": "Perdonar no justifica lo injusto, pero corta la cadena invisible que te mantenía atado al rencor para volver a vivir liviano.",
+        "historia": "Guardar resentimiento es como beber amargura esperando que le haga daño al otro; soltar el odio te devuelve tu descanso y tu futuro.",
+        "ensenanza": "Liberarte del veneno interior es el regalo más grande que puedes darte hoy para seguir adelante.",
+        "aplicacion_practica": "Suelta hoy una ofensa antigua eligiendo tu paz mental por encima de tener la última palabra.",
+        "atmosfera": "renacimiento"
+      },
+      {
+        "id": "hum_buen_samaritano",
+        "autor": "Compasión sin Etiquetas",
+        "obra": "Parábola del Buen Samaritano (Lectura Humana)",
+        "gancho_sugerido": "LA HUMANIDAD NO ENTIENDE DE BANDERAS",
+        "maxima": "El valor de una persona no se mide por sus discursos ni etiquetas, sino por detenerse a tender la mano cuando alguien cayó.",
+        "historia": "En el antiguo relato, quienes tenían títulos pasaron de largo mirando hacia otro lado, y un desconocido de otra tierra se detuvo a curar y acompañar al herido.",
+        "ensenanza": "Siempre hay tiempo para un gesto real de empatía que le devuelva a alguien la fe en las personas.",
+        "aplicacion_practica": "Mira hoy si alguien cerca en silencio necesita ayuda, escucha o compañía.",
+        "atmosfera": "fortaleza"
+      },
+      {
+        "id": "hum_hoy_presencia",
+        "autor": "Calma ante la Ansiedad",
+        "obra": "Enseñanzas de Vida (Lectura Humana)",
+        "gancho_sugerido": "UN DÍA A LA VEZ ES SUFICIENTE",
+        "maxima": "No cargues hoy con el peso imaginario del mañana; cada día trae su propio desafío y también la fuerza justa para atravesarlo.",
+        "historia": "Nadie gana un centímetro de paz anticipando problemas futuros; al volver los ojos a las pequeñas cosas vivas de hoy, la mente descansa.",
+        "ensenanza": "Habitar el presente con gratitud disuelve la mitad de las angustias que inventamos de noche.",
+        "aplicacion_practica": "Resuelve únicamente lo que está frente a ti en este día y suelta la preocupación futura.",
+        "atmosfera": "amanecer"
+      },
+      {
+        "id": "hum_casa_roca",
+        "autor": "Coherencia Real",
+        "obra": "Parábola de la Casa sobre la Roca",
+        "gancho_sugerido": "LOS HECHOS SOSTIENEN CUANDO LLEGA EL VIENTO",
+        "maxima": "Las promesas vacías vuelan con el viento; solo los actos coherentes y honestos sostienen tu vida cuando llega la tormenta.",
+        "historia": "Dos casas parecían iguales bajo el sol, pero al llegar las lluvias solo resistió la que tenía cimientos firmes construidos en silencio día tras día.",
+        "ensenanza": "Construye tu vida sobre valores simples y reales —verdad, lealtad y cuidado— más que sobre apariencias.",
+        "aplicacion_practica": "Cumple hoy una pequeña promesa que te hiciste a ti mismo o a alguien cercano.",
+        "atmosfera": "fortaleza"
+      },
+      {
+        "id": "hum_semilla_pequena",
+        "autor": "Esperanza en lo Pequeño",
+        "obra": "Parábola del Grano de Mostaza",
+        "gancho_sugerido": "NUNCA SUBESTIMES UN GESTO PEQUEÑO",
+        "maxima": "Incluso la semilla más diminuta de bondad sembrada en silencio puede crecer hasta convertirse en refugio para muchos.",
+        "historia": "Quien cree que su pequeño aporte no cambia el mundo olvida que todo gran bosque comenzó con un brote frágil en la tierra.",
+        "ensenanza": "Tu amabilidad cotidiana sí importa y sostiene más vidas de las que imaginas.",
+        "aplicacion_practica": "Haz hoy ese pequeño favor o palabra de aliento sin pensar que es insignificante.",
+        "atmosfera": "renacimiento"
+      },
+      {
+        "id": "hum_eclesiastes_tiempo",
+        "autor": "Eclesiastés (Qohélet)",
+        "obra": "Sabiduría Antigua · Cap. 3",
+        "gancho_sugerido": "TODO TIENE SU TIEMPO BAJO EL CIELO",
+        "maxima": "Todo bajo el sol tiene su estación: tiempo de llorar y tiempo de reír, tiempo de soltar y tiempo de volver a construir.",
+        "historia": "La antigua poesía de Eclesiastés recuerda con serenidad que ninguna etapa dura para siempre y que cada ciclo humano cumple un aprendizaje.",
+        "ensenanza": "No te exijas florecer en pleno invierno; respeta tu proceso porque tu primavera también llegará.",
+        "aplicacion_practica": "Acepta con paciencia el momento que estás viviendo hoy sin castigarte.",
+        "atmosfera": "serenidad"
+      },
+      {
+        "id": "hum_eclesiastes_dos",
+        "autor": "Eclesiastés (Qohélet)",
+        "obra": "Sabiduría Antigua · Cap. 4",
+        "gancho_sugerido": "CAMINAR ACOMPAÑADOS MULTIPLICA LA FUERZA",
+        "maxima": "Mejor son dos que uno solo: si uno tropieza en el camino, siempre hay una mano amiga dispuesta a levantarlo.",
+        "historia": "Frente al mito solitario de poder con todo sin pedir ayuda, la sabiduría ancestral celebra el abrazo, la amistad leal y la comunidad.",
+        "ensenanza": "No nacimos para atravesar las tormentas aislados; compartir cargas nos vuelve invencibles.",
+        "aplicacion_practica": "Escribe hoy a alguien que aprecies solo para saber cómo está realmente.",
+        "atmosfera": "aurora"
+      },
+      {
+        "id": "hum_proverbios_palabra",
+        "autor": "Proverbios Sapienciales",
+        "obra": "Libro de Proverbios · 15:1",
+        "gancho_sugerido": "UNA RESPUESTA AMABLE CALMA LA TORMENTA",
+        "maxima": "La respuesta amable y serena desarma la ira; en cambio, la palabra dura solo aviva el fuego de cualquier discusión.",
+        "historia": "La experiencia humana de siglos resumió en una frase cómo el tono de nuestra voz puede curar una relación o romperla en segundos.",
+        "ensenanza": "Bajar un tono la voz en el momento tenso es un acto enorme de madurez y cuidado.",
+        "aplicacion_practica": "Si alguien llega alterado hoy, responde despacio y con respeto sin igualar su enojo.",
+        "atmosfera": "serenidad"
+      },
+      {
+        "id": "hum_proverbios_corazon",
+        "autor": "Proverbios Sapienciales",
+        "obra": "Libro de Proverbios · 4:23",
+        "gancho_sugerido": "CUIDA LO QUE DEJAS ENTRAR EN TU MENTE",
+        "maxima": "Sobre toda cosa guardada, protege tu mente y tu corazón, porque de ahí brota la claridad de toda tu vida.",
+        "historia": "Mucho antes de las pantallas modernas, los sabios sabían que aquello con lo que alimentas tu interior termina dirigiendo tus días.",
+        "ensenanza": "Seleccionar lo que ves, lees y conversas protege tu alegría y tu humanidad.",
+        "aplicacion_practica": "Regálate hoy un respiro de noticias tóxicas y nutre tu mente con algo verdadero y noble.",
+        "atmosfera": "cosmos"
       }
     ]
   },

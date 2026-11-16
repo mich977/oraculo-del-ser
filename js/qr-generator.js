@@ -426,11 +426,11 @@
     };
   }
 
-  function renderQRCodeToCanvas(canvas, urlText, pixelSize = 260) {
+  function renderQRCodeToCanvas(canvas, urlText, pixelSize = 420) {
     const qr = encodeQRMatrix(urlText);
     const quiet = 4;
     const totalModules = qr.size + quiet * 2;
-    const scale = Math.max(4, Math.floor(pixelSize / totalModules));
+    const scale = Math.max(6, Math.floor(pixelSize / totalModules));
     const finalSize = totalModules * scale;
 
     canvas.width = finalSize;
@@ -440,7 +440,7 @@
     ctx.fillStyle = '#FFFFFF';
     ctx.fillRect(0, 0, finalSize, finalSize);
 
-    ctx.fillStyle = '#090D16';
+    ctx.fillStyle = '#000000';
     for (let r = 0; r < qr.size; r++) {
       for (let c = 0; c < qr.size; c++) {
         if (qr.modules[r][c]) {
