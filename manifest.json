@@ -1,33 +1,21 @@
 {
-  "name": "Oráculo Ciber-Filosófico",
-  "short_name": "Oráculo CF",
-  "description": "Generador visual y textual de sabiduría ancestral (Kybalion, Estoicismo, Numerología, Astrología e Historia) con estética Ciber-Futurista y Libreta Clásica.",
-  "lang": "es",
-  "start_url": "./index.html",
-  "scope": "./",
+  "name": "Oráculo del Ser",
+  "short_name": "Oráculo",
+  "description": "Portal de Sincronicidad, Astrología Ancestral y Presencia",
+  "start_url": ".",
   "display": "standalone",
-  "orientation": "portrait-primary",
-  "background_color": "#050811",
-  "theme_color": "#050811",
-  "categories": ["productivity", "lifestyle", "utilities"],
+  "background_color": "#F9F6F0",
+  "theme_color": "#996515",
   "icons": [
     {
-      "src": "./icons/icon-192.png",
+      "src": "https://api.iconify.design/game-icons:wolf-howl.svg?color=%23996515",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/svg+xml"
     },
     {
-      "src": "./icons/icon-512.png",
+      "src": "https://api.iconify.design/game-icons:wolf-howl.svg?color=%23996515",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "./icons/icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
+      "type": "image/svg+xml"
     }
   ]
 }
