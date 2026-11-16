@@ -1,0 +1,21 @@
+{
+  "name": "Oráculo del Ser",
+  "short_name": "Oráculo",
+  "description": "Portal de Sincronicidad, Astrología Ancestral y Presencia",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F9F6F0",
+  "theme_color": "#996515",
+  "icons": [
+    {
+      "src": "https://api.iconify.design/game-icons:wolf-howl.svg?color=%23996515",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "https://api.iconify.design/game-icons:wolf-howl.svg?color=%23996515",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
